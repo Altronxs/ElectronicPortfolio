@@ -2,7 +2,6 @@ body {
 	background-color: black;
 	font-family: "Source Code Pro", monospace;
     font-optical-sizing: auto;
-    font-weight: <weight>;
     font-style: normal;
 	color: white;
 	margin: 0%;
@@ -10,6 +9,10 @@ body {
 h1 {
 	font-weight: 800;
 	font-size: 3em;
+}
+h2 {
+	font-size: 2em;
+
 }
 .left-column {
 	width: 50%;
@@ -20,9 +23,9 @@ h1 {
 	float: right;
 }
 .lcoltt {
-	width: 60%
+	width: 60%;
 	float: left;
-	align-content: center;
+	align-items: center;
 }
 .rcoltt {
 	width:  40%;
@@ -32,3 +35,22 @@ h1 {
 	width: 100vw;
 	height: 100vh;
 }
+#iam .lcoltt {
+	height: 100%;
+}
+#iam .rcoltt {
+	height: 100%;
+}
+.lcoltt .box {
+	align-items: center;
+}
+.box {
+	margin-top: 20%;
+}
+.box h1, .box h2, .box p {
+	margin: 10px;
+	margin-left: 15%;
+	text-wrap: balance;
+}
+
+
