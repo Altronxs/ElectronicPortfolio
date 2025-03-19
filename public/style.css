@@ -51,6 +51,17 @@ h2 {
 	margin: 10px;
 	margin-left: 15%;
 	text-wrap: balance;
+	background: -webkit-linear-gradient(#eee, #dfdfdf);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
+#roles {
+	background: linear-gradient(90deg, rgba(135,0,0,1) 0%, rgba(255,0,0,1) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
+	opacity: 1; /* Start fully visible */
+}
+
 
 
