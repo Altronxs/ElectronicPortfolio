@@ -1,21 +1,31 @@
 window.onload = function () {
     const roles = document.getElementById("roles");
-    const myroles = ["Full Stack Developer", "Immortal Lion Council Member", "Immortal Lion", "Leader", "Marauder", "Scirauder"];
-    let random;
+    const myroles = ["Full Stack Developer", "Immortal Lion Council Member", "Immortal Lion", "Leader", "Marauder", "Scirauder", "Photographer"];
+    var random;
+    var count = 0;
+    var delay = false;
+    updateRole();
 
     function updateRole() {
-        // Fade out by setting opacity to 0
-        roles.style.opacity = "0";
-
-        // Wait for the fade-out to complete (1 second in this case)
-        setTimeout(() => {
-            random = Math.floor(Math.random() * myroles.length);
-            roles.innerText = myroles[random]; // Update the text
-            roles.style.opacity = "1"; // Fade back in
-
-        }, 1000); // Matches the CSS transition time
+        roles.innerText = "";
+        count = 0;
+        random = Math.floor(Math.random() * myroles.length);
+        if (roles.innerText != myroles[random]) {
+            setInterval(typeEffect, 150);
+        }
     }
 
+    function typeEffect() {
+        if (count == 0) {
+            roles.innerText = myroles[random].charAt(0);
+            count++;
+            console.log("test")
+        } else {
+            roles.innerText = roles.innerHTML + myroles[random].charAt(count);
+            count++;
+        }
+    }
+    
     // Trigger the update every 10 seconds
     setInterval(updateRole, 10000);
 };

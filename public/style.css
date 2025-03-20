@@ -45,7 +45,7 @@ h2 {
 	align-items: center;
 }
 .box {
-	margin-top: 20%;
+	margin-top: 30%;
 }
 .box h1, .box h2, .box p {
 	margin: 10px;
@@ -59,8 +59,6 @@ h2 {
 	background: linear-gradient(90deg, rgba(135,0,0,1) 0%, rgba(255,0,0,1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	transition: opacity 1s ease-in-out; /* Smooth transition for opacity */
-	opacity: 1; /* Start fully visible */
 }
 
 
