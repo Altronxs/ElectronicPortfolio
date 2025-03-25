@@ -3,7 +3,6 @@ window.onload = function () {
     const myroles = ["Full Stack Developer", "Immortal Lion Council Member", "Immortal Lion", "Leader", "Marauder", "Scirauder", "Photographer"];
     var random;
     var count = 0;
-    var delay = false;
     updateRole();
 
     function updateRole() {
