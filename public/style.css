@@ -1,8 +1,8 @@
 body {
 	background-color: black;
-	font-family: "Source Code Pro", monospace;
-    font-optical-sizing: auto;
-    font-style: normal;
+	font-family: "Outfit", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
 	color: white;
 	margin: 0%;
 }
@@ -30,6 +30,11 @@ h2 {
 .rcoltt {
 	width:  40%;
 	float: right;
+	height: 100vh;
+}
+.rcoltt div {
+	height: 100vh;
+	align-items: center;
 }
 #iam {
 	width: 100vw;
@@ -51,15 +56,27 @@ h2 {
 	margin: 10px;
 	margin-left: 15%;
 	text-wrap: balance;
-	background: -webkit-linear-gradient(#eee, #dfdfdf);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
 }
 #roles {
 	background: linear-gradient(90deg, rgba(135,0,0,1) 0%, rgba(255,0,0,1) 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
+#profile {
+	-webkit-filter: grayscale(35%);
+	width: 275px;
+	height: 375px;
+	border-radius: 35px;
+	position: absolute;
+	top: 20%;
+}
+#fade {
+	width: 275px;
+	height: 330px;
+	border-radius: 35px;
+	position: absolute;
+	top: 40%;
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0), rgba(0,0,0,1));
+}
 
 
