@@ -4,28 +4,30 @@ window.onload = function () {
     var random;
     var count = 0;
     var delay = false;
-    updateRole();
 
     function updateRole() {
         roles.innerText = "";
         count = 0;
         random = Math.floor(Math.random() * myroles.length);
-        if (roles.innerText != myroles[random]) {
-            setInterval(typeEffect, 150);
-        }
+        typeEffect();
     }
 
     function typeEffect() {
         if (count == 0) {
             roles.innerText = myroles[random].charAt(0);
             count++;
-            console.log("test")
+            console.log("test");
+            setTimeout(typeEffect, 200);
         } else {
             roles.innerText = roles.innerHTML + myroles[random].charAt(count);
             count++;
+            setTimeout(typeEffect, 200);
         }
     }
     
     // Trigger the update every 10 seconds
     setInterval(updateRole, 10000);
+
+    // intial play
+    updateRole();
 };
