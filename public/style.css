@@ -7,8 +7,12 @@ body {
 	margin: 0%;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	scrollbar-color: #616161 #242424;
-
+	display: flex;
+    flex-direction: column;
+  	flex-wrap: nowrap;
+  	justify-content: normal;
+  	align-items: center;
+  	align-content: center;
 }
 h1 {
 	font-weight: 800;
@@ -18,7 +22,7 @@ h2 {
 	font-size: 2em;
 }
 p {
-	font-size: 1.25em;
+	font-size: 1.1em;
 }
 .left-column {
 	width: 50%;
@@ -75,7 +79,7 @@ p {
 	-webkit-text-fill-color: transparent;
 }
 #profile {
-	-webkit-filter: grayscale(35%);
+	-webkit-filter: grayscale(25%);
 	height:  75vh;
 	border-radius: 10px;
 	position: relative;
@@ -85,7 +89,7 @@ p {
 	z-index: 1;
 }
 #profilet {
-	-webkit-filter: grayscale(35%);
+	-webkit-filter: grayscale(25%);
 	height:  75vh;
 	border-radius: 10px;
 	display: block;
@@ -105,7 +109,6 @@ p {
 }
 #header {
 	background-color: #e9e9e9;
-	position: absolute;
 	width: 100vw;
 	height: 8vh;
 	border-top: solid 3px #D3D3D3;
@@ -143,11 +146,20 @@ p {
 	background-color: #A4161A;
 	color: #ffffff;
 }
+#wbl {
+	height: 0vh;
+	width: 100vw;
+	background-color: #e9e9e9;
+}
+#wblt:hover ~ #wbl {
+	height: 20vh;
+
+}
 #about {
 	width: 100vw;
-	height: 75vh;
+	height: fit-content;
 	background-color: #161A1D;
-	margin-top: 8.5vh;
+	display: block;
 }
 #about-l {
 	height: 100%;
@@ -157,6 +169,7 @@ p {
 }
 .boxr {
 	margin-top: 25%;
+	margin-bottom: 20%;
 	width: 35vw;
 	padding: 25px;
 	border-radius: 10px;
@@ -164,6 +177,7 @@ p {
 }
 .boxl {
 	margin-top: 25%;
+	margin-bottom: 20%;
 	width: 35vw;
 	padding: 25px;
 	border-radius: 10px;
@@ -192,4 +206,30 @@ hr {
 	left: 10px;
 	border: solid 2px #BA181B;
 	border-radius: 2px;
+}
+#goal {
+	display: block;
+	background-color: white;
+	width: 100vw;
+}
+#goal-l {
+	background-color: #f3f3f3;
+	width: 100%;
+}
+#goal-l div {
+	margin-top: 8%;
+	margin-bottom: 8%;
+	width: 35vw;
+	padding: 25px;
+	border-radius: 10px;
+	margin-left: 10%;
+}
+.white hr {
+	margin: 0%;
+	left: 5px;
+	border: solid 2px #E5383B;
+}
+#goal-r {
+	background-color: #f3f3f3;
+	height: fit-content;
 }
