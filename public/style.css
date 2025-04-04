@@ -107,12 +107,17 @@ p {
 	height: 76vh;
 	top: 10%;
 }
+
+
+
+/* NAVBAR CSS */
 #header {
-	background-color: #e9e9e9;
+	background-color: #F5F3F4;
 	width: 100vw;
 	height: 8vh;
 	border-top: solid 3px #D3D3D3;
 	border-bottom: solid 3px #ffffff;
+	box-shadow: 0px 0px 10px  #ffffff;
 }
 #header h1 {
 	background-color: #BA181B;
@@ -128,7 +133,7 @@ p {
 }
 #header button {
 	color: #161A1D;
-	background-color: #e9e9e9;
+	background-color: #F5F3F4;
 	border: 0px;
 	font-size: 3vh;
 	height: 8vh;
@@ -147,7 +152,7 @@ p {
 	color: white;
 }
 #header h1:hover {
-	background-color: #A4161A;
+	background-color: #E5383B;
 	color: #ffffff;
 }
 #header h2:hover {
@@ -157,9 +162,45 @@ p {
 #wbl {
 	height: 0vh;
 	width: 100vw;
-	background-color: #e9e9e9;
-	transition: all 0.5s;
+	background-color: #F5F3F4;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	transition: all 1s;
+	transition-delay: 250ms;
 }
+#wbl a, #extra a {
+	height: fit-content;
+	padding: 10px;
+	padding-left: 5%;
+	padding-right: 5%;
+	font-size: 3vh;
+	font-weight: 500;
+	margin: 10px 10px 10px 10px;
+	transition: all 0.25s;
+	background-color: #F5F3F4;
+	border-radius: 30px;
+	box-shadow: 0px 0px 10px  #b3b3b3;
+}
+#wbl a:hover, #extra a:hover {
+	color:#BA181B;
+	text-decoration: underline #BA181B;
+}
+#extra {
+	height: 0vh;
+	width: 100vw;
+	background-color: #F5F3F4;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	transition: all 1s;
+}
+/* NAVBAR CSS END */
+
+
+
 #about {
 	width: 100vw;
 	height: fit-content;

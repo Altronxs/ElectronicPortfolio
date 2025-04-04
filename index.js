@@ -32,14 +32,13 @@ window.onload = function () {
     updateRole();
 };
 
-
+// Navbar Dropdown Menu
 document.addEventListener('DOMContentLoaded', () => {
-    console.log(document.getElementById('wbl'))
     document.getElementById('wblt').addEventListener('mouseenter', () => {
-        document.getElementById('wbl').style.height = '20vh';
+        document.getElementById('wbl').style.height = '8vh';
     });
     document.getElementById('wbl').addEventListener('mouseenter', () => {
-        document.getElementById('wbl').style.height = '20vh';
+        document.getElementById('wbl').style.height = '8vh';
     })
     document.getElementById('wblt').addEventListener('mouseleave', () => {
         document.getElementById('wbl').style.height = '0vh';
@@ -49,10 +48,15 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     document.getElementById('ext').addEventListener('mouseenter', () => {
-        document.getElementById('wbl').style.height = '20vh';
+        document.getElementById('extra').style.height = '8vh';
     });
-
-    document.getElementById('wblt').addEventListener('mouseleave', () => {
-        document.getElementById('wbl').style.height = '0vh';
+    document.getElementById('extra').addEventListener('mouseenter', () => {
+        document.getElementById('extra').style.height = '8vh';
+    })
+    document.getElementById('ext').addEventListener('mouseleave', () => {
+        document.getElementById('extra').style.height = '0vh';
     });
+    document.getElementById('extra').addEventListener('mouseleave', () => {
+        document.getElementById('extra').style.height = '0vh';
+    })
 });
