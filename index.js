@@ -31,3 +31,28 @@ window.onload = function () {
     // intial play
     updateRole();
 };
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    console.log(document.getElementById('wbl'))
+    document.getElementById('wblt').addEventListener('mouseenter', () => {
+        document.getElementById('wbl').style.height = '20vh';
+    });
+    document.getElementById('wbl').addEventListener('mouseenter', () => {
+        document.getElementById('wbl').style.height = '20vh';
+    })
+    document.getElementById('wblt').addEventListener('mouseleave', () => {
+        document.getElementById('wbl').style.height = '0vh';
+    });
+    document.getElementById('wbl').addEventListener('mouseleave', () => {
+        document.getElementById('wbl').style.height = '0vh';
+    })
+
+    document.getElementById('ext').addEventListener('mouseenter', () => {
+        document.getElementById('wbl').style.height = '20vh';
+    });
+
+    document.getElementById('wblt').addEventListener('mouseleave', () => {
+        document.getElementById('wbl').style.height = '0vh';
+    });
+});

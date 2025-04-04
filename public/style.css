@@ -126,19 +126,23 @@ p {
 	margin: 0%;
 	transition: all 0.5s;
 }
-#header h2 {
+#header button {
 	color: #161A1D;
+	background-color: #e9e9e9;
+	border: 0px;
 	font-size: 3vh;
-	padding: 2.25vh;
+	height: 8vh;
 	float: right;
 	margin: 0%;
 	display: inline;
 	width: fit-content;
-	margin: 0%;
 	transition: all 0.5s;
 	font-weight: 500;
+	padding: 2vh;
+	font-family: "Outfit", sans-serif;
 }
-#header h2:hover {
+
+#header button:hover {
 	background-color: #BA181B;
 	color: white;
 }
@@ -146,14 +150,15 @@ p {
 	background-color: #A4161A;
 	color: #ffffff;
 }
+#header h2:hover {
+	background-color: #BA181B;
+	color: #ffffff;
+}
 #wbl {
 	height: 0vh;
 	width: 100vw;
 	background-color: #e9e9e9;
-}
-#wblt:hover ~ #wbl {
-	height: 20vh;
-
+	transition: all 0.5s;
 }
 #about {
 	width: 100vw;
