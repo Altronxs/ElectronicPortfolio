@@ -16,13 +16,13 @@ body {
 }
 h1 {
 	font-weight: 800;
-	font-size: 3em;
+	font-size: 5vh;
 }
 h2 {
-	font-size: 2em;
+	font-size: 4vh;
 }
 p {
-	font-size: 1.1em;
+	font-size: 2vh;
 }
 .left-column {
 	width: 50%;
@@ -115,21 +115,24 @@ p {
 	background-color: #F5F3F4;
 	width: 100vw;
 	height: 8vh;
-	border-top: solid 3px #D3D3D3;
-	border-bottom: solid 3px #ffffff;
-	box-shadow: 0px 0px 10px  #ffffff;
+	border-top: solid 2px #D3D3D3;
+	border-bottom: solid 1px #ffffff;
+	box-shadow: 0px 0px 10px  #d9d9d9;
+	z-index: 3;
 }
 #header h1 {
 	background-color: #BA181B;
 	float: left;
-	margin: 0%;
 	color: #ffffff;
+	height: 3vh;
 	font-size: 3vh;
-	padding: 2.25vh;
+	padding: 2.5vh;
 	width: fit-content;
 	display: inline;
 	margin: 0%;
 	transition: all 0.5s;
+	align-self: center;
+	text-align: center;
 }
 #header button {
 	color: #161A1D;
@@ -169,12 +172,14 @@ p {
 	justify-content: center;
 	transition: all 1s;
 	transition-delay: 250ms;
+	box-shadow: 0px 0px 10px  #d9d9d9;
+	z-index: 2;
 }
 #wbl a, #extra a {
 	height: fit-content;
 	padding: 10px;
-	padding-left: 5%;
-	padding-right: 5%;
+	padding-left: 10vh;
+	padding-right: 10vh;
 	font-size: 3vh;
 	font-weight: 500;
 	margin: 10px 10px 10px 10px;
@@ -198,9 +203,11 @@ p {
 	flex-wrap: nowrap;
 	justify-content: center;
 	transition: all 1s;
+	transition-delay: 250ms;
+	box-shadow: 0px 0px 10px  #d9d9d9;
+	z-index: 2;
 }
 /* NAVBAR CSS END */
-
 
 
 #about {
@@ -208,6 +215,7 @@ p {
 	height: fit-content;
 	background-color: #161A1D;
 	display: block;
+	border-top: solid 1px #ffffff;
 }
 #about-l {
 	height: 100%;
@@ -280,4 +288,33 @@ hr {
 #goal-r {
 	background-color: #f3f3f3;
 	height: fit-content;
+}
+
+
+#quote {
+	width: 100vw;
+	height: fit-content;
+	background-color: #BA181B;
+	border-top: solid 1px #ffffff;
+}
+#quote h1 {
+	color: #F5F3F4;
+	font-size: 8vh;
+	margin-top: 5vh;
+	margin-bottom: 0vh;
+	margin-left: 11vw;
+}
+#quote h2 {
+	color: #F5F3F4;
+	font-size: 5vh;
+	margin-top: 1vh;
+	margin-bottom: 8vh;
+	margin-left: 11vw;
+}
+#quote h3 {
+	color: #F5F3F4;
+	font-size: 4vh;
+	margin-top: 0vh;
+	margin-bottom: 1vh;
+	margin-left: 11vw;
 }

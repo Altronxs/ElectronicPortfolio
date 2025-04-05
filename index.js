@@ -35,12 +35,12 @@ window.onload = function () {
 // Navbar Dropdown Menu
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('wblt').addEventListener('mouseenter', () => {
-        document.getElementById('wbl').style.height = '8vh';
+        document.getElementById('wbl').style.height = '9vh';
         document.getElementById('wblt').style.backgroundColor = '#BA181B';
         document.getElementById('wblt').style.color = 'white';
     });
     document.getElementById('wbl').addEventListener('mouseenter', () => {
-        document.getElementById('wbl').style.height = '8vh';
+        document.getElementById('wbl').style.height = '9vh';
         document.getElementById('wblt').style.backgroundColor = '#BA181B';
         document.getElementById('wblt').style.color = 'white';
     })
@@ -56,12 +56,12 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     document.getElementById('ext').addEventListener('mouseenter', () => {
-        document.getElementById('extra').style.height = '8vh';
+        document.getElementById('extra').style.height = '9vh';
         document.getElementById('ext').style.backgroundColor = '#BA181B';
         document.getElementById('ext').style.color = 'white';
     });
     document.getElementById('extra').addEventListener('mouseenter', () => {
-        document.getElementById('extra').style.height = '8vh';
+        document.getElementById('extra').style.height = '9vh';
         document.getElementById('ext').style.backgroundColor = '#BA181B';
         document.getElementById('ext').style.color = 'white';
     })
