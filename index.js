@@ -34,6 +34,7 @@ window.onload = function () {
 
 // Navbar Dropdown Menu
 document.addEventListener('DOMContentLoaded', () => {
+    // Navbar Dropdown Menu
     document.getElementById('wblt').addEventListener('mouseenter', () => {
         document.getElementById('wbl').style.height = '9vh';
         document.getElementById('wblt').style.backgroundColor = '#BA181B';
@@ -75,4 +76,5 @@ document.addEventListener('DOMContentLoaded', () => {
         document.getElementById('ext').style.backgroundColor = '#F5F3F4';
         document.getElementById('ext').style.color = '#161A1D';
     })
+
 });

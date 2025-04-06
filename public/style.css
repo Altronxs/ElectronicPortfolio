@@ -190,7 +190,8 @@ p {
 	text-decoration: none;
 	color: #161A1D;
 }
-#wbl a:hover, #extra a:hover {
+#wbl a:hover,
+#extra a:hover {
 	color:#BA181B;
 	text-decoration: underline #BA181B;
 }
@@ -321,7 +322,7 @@ hr {
 	margin-left: 11vw;
 	position: relative;
 	transition: all 250ms ease;
-	bottom: 0vh;;
+	bottom: 0vh;
 }
 #title h1:hover {
 	bottom: 0.5vh;
@@ -329,3 +330,68 @@ hr {
 #title h3:hover {
 	bottom: 0.5vh;
 }
+#timeline {
+	display: grid;
+	width: 100vw;
+	grid-template-columns: 1fr 2fr;
+	grid-template-areas: 'nine first';
+	background-color: #ffffff;
+}
+.date {
+	float: left;
+	width: 100%;
+	height: fit-content;
+	background-color: #ffffff;
+	font-size: 5.5vh;
+	text-align: center;
+	margin: 0%;
+	margin-top: 8vh;
+	margin-bottom: 3vh;
+	
+}
+#nineteen {
+	grid-area: first;
+	background-color: #ffffff;
+	display: flex;
+	height: fit-content;
+}
+.project .imgo {
+	height: 40vh;
+	border-radius: 20px;
+	display: inline;
+	transition: all 250ms;
+	z-index: 2;
+	margin: 0%;
+	margin-top: 2%;
+	box-shadow: 8px 8px #BA181B, 16px 16px #E5383B, -1px -1px  10px#6e6e6e;
+}
+.imgo:hover {
+	margin-top: 0%;
+}
+.project {
+	margin-left: 5%;
+	width: max-content;
+	margin-bottom: 5%;
+	padding: 10px;
+}
+.project h2 {
+	margin-bottom: 3%;
+}
+.project hr {
+	width: 55%;
+	margin:0%;
+	margin-bottom: 3%;
+}
+#nine {
+	grid-area: nine;
+	border-right: solid 3px #d3d3d3;
+	margin-top: 3vh;
+}
+#nine img {
+	width: 15vw;
+	display: block;
+	margin: auto auto;
+	margin-bottom: 8vh;
+	
+}
+
