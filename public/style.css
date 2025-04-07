@@ -151,7 +151,7 @@ p {
 }
 
 #header button:hover {
-	background-color: #BA181B;
+	background-	visibility: visible;color: #BA181B;
 	color: white;
 }
 #header h1:hover {
@@ -359,33 +359,43 @@ hr {
 	background-color: #ffffff;
 	display: flex;
 	height: fit-content;
+	justify-content: center;
+	margin-right: 10vw;
 }
 .project .imgo {
-	width: 20vw;
+	width: 99%;
 	border-radius: 20px;
 	display: inline;
+	position: relative;
+	top: 1vh;
 	transition: all 250ms;
 	z-index: 2;
 	margin: 0%;
-	margin-top: 2%;
-	box-shadow: 8px 8px #BA181B, 16px 16px #E5383B, -1px -1px  10px#6e6e6e;
+	border: solid 2px white;
+	filter:  grayscale(25%);
 }
-.imgo:hover {
-	margin-top: 0%;
-}
+
 .project {
-	margin-left: 5%;
-	width: max-content;
-	margin-bottom: 5%;
-	padding: 10px;
+	width: 25vw;
+	margin: 5%;
+	border-radius: 20px;
+	box-shadow: 3px 3px  10px #c4c4c4;
+	transition: all 250ms;
+}
+.project a {
+	height: 1vh;
 }
 .project h2 {
 	margin-bottom: 3%;
+	position: relative;
+	left: 20px;
 }
 .project hr {
 	width: 55%;
 	margin:0%;
 	margin-bottom: 3%;
+	position: relative;
+	left: 20px;
 }
 #nine {
 	grid-area: nine;
@@ -416,5 +426,7 @@ hr {
 	background-color: #ffffff;
 	display: flex;
 	height: fit-content;
+	justify-content: center;
+	margin-right: 10vw;
 }
 
