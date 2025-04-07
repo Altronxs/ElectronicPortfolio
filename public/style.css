@@ -356,7 +356,7 @@ hr {
 	height: fit-content;
 }
 .project .imgo {
-	height: 40vh;
+	width: 20vw;
 	border-radius: 20px;
 	display: inline;
 	transition: all 250ms;
