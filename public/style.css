@@ -151,7 +151,7 @@ p {
 }
 
 #header button:hover {
-	background-	visibility: visible;color: #BA181B;
+	visibility: visible;
 	color: white;
 }
 #header h1:hover {
@@ -339,48 +339,63 @@ hr {
 	display: grid;
 	width: 100vw;
 	grid-template-columns: 1fr 2fr;
-	grid-template-areas: 'nine first'
-						 'two twenty';
-	background-color: #ffffff;
+	grid-template-areas: 'nine nine'
+						 'first first'
+						 'two two'
+						 'twenty twenty';
+	background-color: #F5F3F4;
 }
 .date {
-	float: left;
-	width: 100%;
+	justify-self: center;
+	width: fit-content;
 	height: fit-content;
-	background-color: #ffffff;
+	background-color: F5F3F4;
+	color: #0B090A;
 	font-size: 5.5vh;
 	text-align: center;
 	margin: 0%;
 	margin-top: 2vh;
-	margin-bottom: 8vh;
+	margin-bottom: 3vh;
+	padding: 10px;
+	background-color: #F5F3F4;
 }
 #nineteen {
 	grid-area: first;
-	background-color: #ffffff;
-	display: flex;
-	height: fit-content;
-	justify-content: center;
-	margin-right: 10vw;
 }
 .project .imgo {
 	width: 99%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	object-position: 55%;
 	border-radius: 20px;
 	display: inline;
 	position: relative;
-	top: 1vh;
 	transition: all 250ms;
 	z-index: 2;
 	margin: 0%;
 	border: solid 2px white;
-	filter:  grayscale(25%);
+	filter:  grayscale(10%);
 }
-
+.project-container {
+	grid-area: first;
+	background-color: #F5F3F4;
+	display: flex;
+	height: fit-content;
+	justify-content: center;
+}
 .project {
-	width: 25vw;
-	margin: 5%;
+	width: 20vw;
+	margin: 1%;
 	border-radius: 20px;
-	box-shadow: 3px 3px  10px #c4c4c4;
+	box-shadow: 3px 3px  10px #e2e2e2;
 	transition: all 250ms;
+	background-color: #ffffff;
+	position: relative;
+	bottom: 0%;
+	transition: all 250ms;
+}
+.project:hover {
+	bottom: 1%;
 }
 .project a {
 	height: 1vh;
@@ -399,8 +414,13 @@ hr {
 }
 #nine {
 	grid-area: nine;
-	border-right: solid 3px #d3d3d3;
+}
+.date-container {
 	margin-top: 3vh;
+	width: 100vw;
+}
+.date-container hr {
+	margin-bottom: 2vh;
 }
 #nine img {
 	width: 15vw;
@@ -413,7 +433,7 @@ hr {
 	border-right: solid 3px #d3d3d3;
 }
 #two .date {
-	margin-top: 15vh;
+	margin-top: 5vh;
 }
 #two img {
 	width: 15vw;
@@ -423,10 +443,7 @@ hr {
 }
 #twenty {
 	grid-area: twenty;
-	background-color: #ffffff;
-	display: flex;
-	height: fit-content;
-	justify-content: center;
-	margin-right: 10vw;
 }
-
+.project h2 strong, .date strong {
+	color: #E5383B ;
+}
