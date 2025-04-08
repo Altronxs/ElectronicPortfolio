@@ -342,7 +342,9 @@ hr {
 	grid-template-areas: 'nine nine'
 						 'first first'
 						 'two two'
-						 'twenty twenty';
+						 'twenty twenty'
+						 'twenty-two-text twenty-two-text'
+						 'twenty-two twenty-two';
 	background-color: #F5F3F4;
 }
 .date {
@@ -380,12 +382,15 @@ hr {
 	grid-area: first;
 	background-color: #F5F3F4;
 	display: flex;
+	flex-wrap: wrap;
 	height: fit-content;
+	align-content: center;
 	justify-content: center;
 }
 .project {
 	width: 20vw;
-	margin: 1%;
+	min-width: 200px;
+	margin: 1.5%;
 	border-radius: 20px;
 	box-shadow: 3px 3px  10px #e2e2e2;
 	transition: all 250ms;
@@ -396,6 +401,7 @@ hr {
 }
 .project:hover {
 	bottom: 1%;
+	box-shadow: 3px 3px  15px #adadad;
 }
 .project a {
 	height: 1vh;
@@ -404,6 +410,7 @@ hr {
 	margin-bottom: 3%;
 	position: relative;
 	left: 20px;
+	font-size: 2em;
 }
 .project hr {
 	width: 55%;
