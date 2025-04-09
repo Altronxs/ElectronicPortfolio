@@ -84,30 +84,24 @@ p {
 	border-radius: 10px;
 	position: relative;
 	top: 11%;
-	box-shadow: 10px 10px #E5383B;
+	box-shadow: 10px 10px #E5383B, 20px 20px #BA181B;
 	transition: all 0.25s;
 	z-index: 1;
 }
-#profilet {
-	-webkit-filter: grayscale(25%);
-	height:  75vh;
-	border-radius: 10px;
-	display: block;
-	position: absolute;
-	top: 11%;
-	box-shadow: 20px 20px #BA181B;
-	transition: all 0.25s;
-	z-index: 0;
-} 
 #profile:hover {
 	height: 76vh;
 	top: 10%;
 }
-#profile:hover + #profilet {
+#profile:hover {
 	height: 76vh;
 	top: 10%;
 }
-
+#iam-background {
+	margin: 0%;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+}
 
 
 /* NAVBAR CSS */
@@ -252,13 +246,20 @@ p {
 }
 .gray {
 	background-color: rgba(255, 255, 255, 0.1);
-	box-shadow: 0px 0px 10px  #000000;
+	box-shadow: 0px 0px 10px  #0B090A;
 	color:#ffffff
 }
 .white {
 	background-color: rgb(255, 255, 255);
 	box-shadow: 0px 0px 10px  #999999;
-	color:#000000
+	color:#0B090A;
+}
+.transparent-white {
+	background-color: #ffffff00;
+	color:#0B090A;
+}
+.dash {
+
 }
 hr {
 	width: 45%;
@@ -338,20 +339,21 @@ hr {
 #timeline {
 	display: grid;
 	width: 100vw;
-	grid-template-columns: 1fr 2fr;
-	grid-template-areas: 'nine nine'
-						 'first first'
-						 'two two'
-						 'twenty twenty'
-						 'twenty-two-text twenty-two-text'
-						 'twenty-two twenty-two';
-	background-color: #F5F3F4;
+	grid-template-columns: 1fr;
+	grid-template-areas: 'nine'
+						 'first'
+						 'two'
+						 'twenty'
+						 'twenty-one-text'
+						 'twenty-one'
+						 'twenty-two-text'
+						 'twenty-two';
+	background-color: #f5f3f4;
 }
 .date {
 	justify-self: center;
 	width: fit-content;
 	height: fit-content;
-	background-color: F5F3F4;
 	color: #0B090A;
 	font-size: 5.5vh;
 	text-align: center;
@@ -359,7 +361,7 @@ hr {
 	margin-top: 2vh;
 	margin-bottom: 3vh;
 	padding: 10px;
-	background-color: #F5F3F4;
+	background-color: #f5f3f400;
 }
 #nineteen {
 	grid-area: first;
@@ -380,7 +382,7 @@ hr {
 }
 .project-container {
 	grid-area: first;
-	background-color: #F5F3F4;
+	background-color: #f5f3f400;
 	display: flex;
 	flex-wrap: wrap;
 	height: fit-content;
@@ -451,6 +453,6 @@ hr {
 #twenty {
 	grid-area: twenty;
 }
-.project h2 strong, .date strong {
+.project h2 strong, .date strong, .dash {
 	color: #E5383B ;
 }
