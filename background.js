@@ -9,7 +9,7 @@ var x = [];
 var y = [];
 var velx = [];
 var vely = [];
-var amount = 150;
+var amount = 100;
 var particles = [];
 var colour = [];
 var size = [];
@@ -87,16 +87,24 @@ function animate() {
         
          for (var j = 0; j < amount; j++) {
             //console.log(getDistance(x[i],y[i], x[j],y[j]));
-            if (getDistance(x[i],y[i], x[j],y[j]) <= 100) {
+            if (getDistance(x[i],y[i], x[j],y[j]) <= 150) {
                 c.moveTo(x[i],y[i]);
                 c.lineTo(x[j],y[j]);
-                c.strokeStyle = "#D3D3D3";
+                if (x[i] <= (cw/2)) {
+                    c.strokeStyle = "#D3D3D3";
+                } else {
+                    c.strokeStyle = "#ababab";
+                }
                 c.stroke();
             }
             if (getDistance(x[i],y[i], xm, ym) <= 150) {
                 c.moveTo(x[i],y[i]);
                 c.lineTo(xm,ym);
-                c.strokeStyle = "#D3D3D3";
+                if (x[i] <= (cw/2)) {
+                    c.strokeStyle = "#D3D3D3";
+                } else {
+                    c.strokeStyle = "#ababab";
+                }
                 c.stroke();
             }
          }
@@ -118,5 +126,5 @@ function getDistance(x1, y1, x2, y2) {
     var dist = Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
     return (dist);
 }
-repeat();
+//repeat();
 animate();

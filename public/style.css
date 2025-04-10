@@ -84,7 +84,7 @@ p {
 	height:  75vh;
 	position: relative;
 	top: 11%;
-	box-shadow: 40px 40px #A4161A, 0px 0px 10px  #555555;
+	box-shadow: 40px 40px #BA181B, 0px 0px 10px  #555555;
 	transition: all 0.25s;
 	z-index: 1;
 }
@@ -218,6 +218,39 @@ p {
 }
 #about-r {
 	height: 100%;
+}
+#lang {
+	background-color:  #BA181B;
+	width: 100vw;
+	height: fit-content;
+}
+#lang h2 {
+	width: 100vw;
+	text-align: center;
+	margin: 1vw;
+}
+.break {
+  flex-basis: 100%;
+  height: 0;
+}
+#lang-container {
+	background-color:  #BA181B;
+	width: 98vw;
+	height: fit-content;
+	padding: 1vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#lang-container img {
+	margin: 10px;
+	box-shadow: 0px 0px 10px  #700002;
+	position: relative;
+	margin-bottom: 10px;
+	transition: all 250ms;
+}
+#lang-container img:hover {
+	margin-bottom: 15px;
 }
 .boxr {
 	margin-top: 25%;
