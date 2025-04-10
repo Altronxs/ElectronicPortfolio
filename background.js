@@ -4,16 +4,23 @@ ctx.height = window.innerHeight;
 ch = window.innerHeight;
 cw = window.innerWidth;
 var c = ctx.getContext("2d");
-const color = ['#660708', '#A4161A', '#BA181B', '#E5383B'];
+const color = ['#660708', '#161A1D'];
 var x = [];
 var y = [];
 var velx = [];
 var vely = [];
-var amount = 500;
+var amount = 150;
 var particles = [];
 var colour = [];
 var size = [];
 var bounce = 3;
+var xm;
+var ym;
+
+const grad=c.createLinearGradient(0,0, cw,cw);
+grad.addColorStop(0, "#FFFFFF");
+grad.addColorStop(1, "#E5383B");
+console.log(ch,cw);
 
 function Particle(x,y,size,color) {
     this.x = x;
@@ -33,18 +40,26 @@ function repeat() {
         y[o] = Math.random() * window.innerHeight;
         velx[o] = (Math.random() < 0.5 ? -1 : 1) * Math.random();
         vely[o] = (Math.random() < 0.5 ? -1 : 1) * Math.random();
-        colour[o] = color[Math.floor(Math.random() * 3)]
-        size[o] = (Math.random() * 2) + 0.5;
+        colour[o] = "#F5F3F4";
+        size[o] = 0.5;
     }
 }
+var iam = document.getElementById('iam');
+
+iam.addEventListener("mousemove", (event) => {
+  const rect = iam.getBoundingClientRect();
+  xm = event.clientX - rect.left;
+  ym = event.clientY - rect.top;
+
+});
+  
 function animate() {
     requestAnimationFrame(animate);
     //background
     c.beginPath();
     c.rect(0, 0, cw, ch);
-    c.fillStyle = "#f3f3f3";
+    c.fillStyle = grad;
     c.fill();
-
     //object creation
     for (var i = 0; i < amount; i++) {
         particles[i] = new Particle(x[i],y[i], size[i], colour[i]);
@@ -68,8 +83,40 @@ function animate() {
                 y[i] = ch - bounce;
             }
          }
+         
+        
+         for (var j = 0; j < amount; j++) {
+            //console.log(getDistance(x[i],y[i], x[j],y[j]));
+            if (getDistance(x[i],y[i], x[j],y[j]) <= 100) {
+                c.moveTo(x[i],y[i]);
+                c.lineTo(x[j],y[j]);
+                c.strokeStyle = "#D3D3D3";
+                c.stroke();
+            }
+            if (getDistance(x[i],y[i], xm, ym) <= 150) {
+                c.moveTo(x[i],y[i]);
+                c.lineTo(xm,ym);
+                c.strokeStyle = "#D3D3D3";
+                c.stroke();
+            }
+         }
+
     }
+}
+
+function diff (num1, num2) {
+    if (num1 > num2) {
+      return (num1 - num2);
+    } else {
+      return (num2 - num1);
+    }
+}
+
+function getDistance(x1, y1, x2, y2) {
+    var deltaX = diff(x1, x2);
+    var deltaY = diff(y1, y2);
+    var dist = Math.sqrt(Math.pow(deltaX, 2) + Math.pow(deltaY, 2));
+    return (dist);
 }
 repeat();
 animate();
-
