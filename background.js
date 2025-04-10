@@ -19,7 +19,7 @@ var ym;
 
 const grad=c.createLinearGradient(0,0, cw,cw);
 grad.addColorStop(0, "#FFFFFF");
-grad.addColorStop(1, "#E5383B");
+grad.addColorStop(1, "#161A1D");
 console.log(ch,cw);
 
 function Particle(x,y,size,color) {

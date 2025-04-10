@@ -84,7 +84,7 @@ p {
 	height:  75vh;
 	position: relative;
 	top: 11%;
-	box-shadow: 15px 15px #A4161A, 30px 30px #BA181B, 0px 0px 10px  #555555;
+	box-shadow: 40px 40px #A4161A, 0px 0px 10px  #555555;
 	transition: all 0.25s;
 	z-index: 1;
 }
