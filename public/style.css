@@ -36,13 +36,13 @@ p {
 	width: 60%;
 	float: left;
 	align-items: center;
-	background-color: #f3f3f3;
+	background-color: #f3f3f300;
 }
 .rcoltt {
 	width:  40%;
 	float: right;
 	height: 100vh;
-	background-color: #f3f3f3;
+	background-color: #f3f3f300;
 }
 .rcoltt div {
 	height: 100vh;
@@ -51,6 +51,7 @@ p {
 #iam {
 	width: 100vw;
 	height: 100vh;
+	z-index: 2;
 }
 #iam .lcoltt {
 	height: 100%;
