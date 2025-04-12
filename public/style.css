@@ -32,6 +32,22 @@ p {
 	width:  50%;
 	float: right;
 }
+.left-column img {
+	height: 50vh;
+	display: block;
+	margin: auto auto;
+	margin-top: 12.5%;
+	margin-bottom: 12.5%;
+	border-radius: 5px;
+	position: relative;
+	left: 0%;
+	box-shadow: -20px 0px #660708, -40px 0px #A4161A;
+	transition: all 250ms;
+}
+.left-column img:hover {
+	left: 10px;
+	box-shadow: -30px 0px #660708, -60px 0px 0px #A4161A;
+}
 .lcoltt {
 	width: 60%;
 	float: left;
@@ -176,7 +192,6 @@ p {
 	margin: 10px;
 	background-color: #F5F3F4;
 	border-radius: 30px;
-	box-shadow: 0px 0px 10px  #b3b3b3;
 	text-decoration: none;
 	color: #161A1D;
 	padding-bottom: 0%;
@@ -197,7 +212,6 @@ p {
 	justify-content: center;
 	transition: all 1s;
 	transition-delay: 500ms;
-	box-shadow: 0px 0px 10px  #d9d9d9;
 	z-index: 2;
 }
 /* NAVBAR CSS END */
@@ -244,10 +258,11 @@ p {
 	box-shadow: 0px 0px 10px  #700002;
 	position: relative;
 	margin-bottom: 10px;
+	bottom: 0px;
 	transition: all 250ms;
 }
 #lang-container img:hover {
-	margin-bottom: 15px;
+	bottom: 5px;
 }
 .boxr {
 	margin-top: 12.5%;
@@ -319,10 +334,6 @@ hr {
 	display: block;
 	background-color: #FFFFFF;
 	width: 100vw;
-}
-#goal-l {
-	background-color: #FFFFFF;
-	width: 100%;
 }
 #resume {
 	display: block;
