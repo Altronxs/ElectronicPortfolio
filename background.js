@@ -17,7 +17,7 @@ var bounce = 3;
 var xm;
 var ym;
 
-const grad=c.createLinearGradient(0,0, cw,cw);
+const grad= c.createLinearGradient(0,0, cw,ch/2);
 grad.addColorStop(0, "#FFFFFF");
 grad.addColorStop(1, "#161A1D");
 console.log(ch,cw);
@@ -52,7 +52,12 @@ iam.addEventListener("mousemove", (event) => {
   ym = event.clientY - rect.top;
 
 });
-  
+
+c.beginPath();
+c.rect(0, 0, cw, ch);
+c.fillStyle = grad;
+c.fill();  
+
 function animate() {
     requestAnimationFrame(animate);
     //background
@@ -90,20 +95,28 @@ function animate() {
             if (getDistance(x[i],y[i], x[j],y[j]) <= 150) {
                 c.moveTo(x[i],y[i]);
                 c.lineTo(x[j],y[j]);
-                if (x[i] <= (cw/2)) {
+                if (x[i] <= (cw/4)) {
+                    c.strokeStyle = "#FFFFFF";
+                } else if (x[i] <= (cw/2) && x[i] >= (cw/4)) {
                     c.strokeStyle = "#D3D3D3";
-                } else {
-                    c.strokeStyle = "#ababab";
+                } else if (x[i] <= ((cw/4)*3) && x[i] >= (cw/2)) {
+                    c.strokeStyle = "#B1A7A6";
+                } else if (x[i] <= cw && x[i] >= ((cw/4)*3)) {
+                    c.strokeStyle = "#161A1D";
                 }
                 c.stroke();
             }
             if (getDistance(x[i],y[i], xm, ym) <= 150) {
                 c.moveTo(x[i],y[i]);
                 c.lineTo(xm,ym);
-                if (x[i] <= (cw/2)) {
+                if (x[i] <= (cw/4)) {
+                    c.strokeStyle = "#FFFFFF";
+                } else if (x[i] <= (cw/2) && x[i] >= (cw/4)) {
                     c.strokeStyle = "#D3D3D3";
-                } else {
-                    c.strokeStyle = "#ababab";
+                } else if (x[i] <= ((cw/4)*3) && x[i] >= (cw/2)) {
+                    c.strokeStyle = "#B1A7A6";
+                } else if (x[i] <= cw && x[i] >= ((cw/4)*3)) {
+                    c.strokeStyle = "#161A1D";
                 }
                 c.stroke();
             }
@@ -127,4 +140,4 @@ function getDistance(x1, y1, x2, y2) {
     return (dist);
 }
 //repeat();
-animate();
+//animate();

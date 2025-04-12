@@ -50,8 +50,9 @@ p {
 }
 #iam {
 	width: 100vw;
-	height: 100vh;
+	height: 92vh;
 	z-index: 2;
+	background-color: #F5F3F4;
 }
 #iam .lcoltt {
 	height: 100%;
@@ -80,20 +81,16 @@ p {
 	-webkit-text-fill-color: transparent;
 }
 #profile {
-	-webkit-filter: grayscale(25%);
-	height:  75vh;
+	height:  65vh;
 	position: relative;
 	top: 11%;
-	box-shadow: 40px 40px #BA181B, 0px 0px 10px  #555555;
+	box-shadow: 20px 20px #660708, 40px 40px #A4161A, 0px 0px 10px  #555555;
 	transition: all 0.25s;
 	z-index: 1;
+	border-radius: 5px;
 }
 #profile:hover {
-	height: 76vh;
-	top: 10%;
-}
-#profile:hover {
-	height: 76vh;
+	height: 66vh;
 	top: 10%;
 }
 #iam-background {
@@ -253,20 +250,20 @@ p {
 	margin-bottom: 15px;
 }
 .boxr {
-	margin-top: 25%;
-	margin-bottom: 20%;
+	margin-top: 12.5%;
+	margin-bottom: 12.5%;
 	width: 35vw;
 	padding: 25px;
 	border-radius: 15px;
 	margin-left: 10%;
 }
 .boxl {
-	margin-top: 25%;
-	margin-bottom: 20%;
+	margin-top: 12.5%;
+	margin-bottom: 12.5%;
 	width: 35vw;
 	padding: 25px;
 	border-radius: 15px;
-	margin-left: 10%;
+	margin-left: 7%;
 }
 .box h2 {
 	margin-bottom: 10px;
@@ -288,7 +285,6 @@ p {
 	color:#0B090A;
 }
 .transparent-white {
-	background-color: #ffffff00;
 	color:#0B090A;
 }
 .transparent-black {
@@ -302,31 +298,42 @@ hr {
 	border: solid 2px #BA181B;
 	border-radius: 2px;
 }
+.center {
+	display: block;
+	margin: auto auto;
+}
+.center-text {
+	text-align: center;
+}
 .boxl hr {
 	left: 15px;
 }
+#statement {
+	width: 100vw;
+	height: fit-content;
+	background-color:  #BA181B;
+	display: block;
+	padding: 2.5%;
+}
 #goal {
 	display: block;
-	background-color: white;
+	background-color: #FFFFFF;
 	width: 100vw;
 }
 #goal-l {
-	background-color: #f3f3f3;
+	background-color: #FFFFFF;
 	width: 100%;
 }
-#goal-l div {
-	margin-top: 8%;
-	margin-bottom: 8%;
-	width: 35vw;
-	padding: 25px;
-	border-radius: 10px;
-	margin-left: 10%;
+#resume {
+	display: block;
+	background-color: #F5F3F4;
+	width: 100vw;
 }
 .white hr {
 	border: solid 2px #E5383B;
 }
 #goal-r {
-	background-color: #f3f3f3;
+	background-color: #FFFFFF;
 	height: fit-content;
 }
 
