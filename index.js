@@ -78,3 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
 });
+
+function redirect(url) {
+    location.href = url;
+};

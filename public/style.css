@@ -24,16 +24,21 @@ h2 {
 p {
 	font-size: 2.5vh;
 }
+a {
+	text-decoration: none;
+}
 .left-column {
 	width: 50%;
+	min-width: 650px;
 	float: left;
 }
 .right-column {
 	width:  50%;
+	min-width: 650px;
 	float: right;
 }
 .left-column img {
-	height: 50vh;
+	width: 70%;
 	display: block;
 	margin: auto auto;
 	margin-top: 12.5%;
@@ -45,7 +50,7 @@ p {
 	transition: all 250ms;
 }
 .right-column img {
-	height: 50vh;
+	width: 70%;
 	display: block;
 	margin: auto auto;
 	margin-top: 12.5%;
@@ -134,6 +139,17 @@ p {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
 /* NAVBAR CSS */
 #header {
 	background-color: #F5F3F4;
@@ -151,6 +167,7 @@ p {
 	height: 3vh;
 	font-size: 3vh;
 	padding: 2.5vh;
+	padding-left: 2.25vw;
 	width: fit-content;
 	display: inline;
 	margin: 0%;
@@ -212,6 +229,7 @@ p {
 	text-decoration: none;
 	color: #161A1D;
 	padding-bottom: 0%;
+	box-shadow: 0px 0px 10px  #d9d9d9;
 }
 #wbl a:hover,
 #extra a:hover {
@@ -232,6 +250,16 @@ p {
 	z-index: 2;
 }
 /* NAVBAR CSS END */
+
+
+
+
+
+
+
+
+
+
 
 
 #about {
@@ -361,9 +389,6 @@ hr {
 	background-color: #D3D3D3;
 	width: 100vw;
 }
-#resume .right-column a {
-	width: 0%;
-}
 .white hr {
 	border: solid 2px #E5383B;
 }
@@ -443,6 +468,22 @@ hr {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #title {
 	width: 100vw;
 	height: fit-content;
@@ -460,7 +501,7 @@ hr {
 	bottom: 0vh;;
 }
 #title hr {
-	border: solid 3px #ffffff;
+	border: solid 2px #ffffff;
 	margin-left: 10vw;
 	width: 25%;
 	margin-bottom: 5vh;
