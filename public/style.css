@@ -361,6 +361,9 @@ hr {
 	background-color: #D3D3D3;
 	width: 100vw;
 }
+#resume .right-column a {
+	width: 0%;
+}
 .white hr {
 	border: solid 2px #E5383B;
 }
@@ -371,7 +374,7 @@ hr {
 #link-contact {
 	text-decoration: none;
 	color: #FFFFFF;
-	margin: 0px 30px;
+	margin: 0px 10px;
 }
 #link-contact p {
 	margin: 0%;
@@ -388,6 +391,55 @@ hr {
 	margin-bottom: 0%;
 	height: 25px;
 	display: inline;
+}
+.footer-info {
+	margin: 2%;
+}
+.footer-info h2 {
+	margin: 3%;
+	padding-bottom: 5px;
+	font-size: 3vh;
+	text-align: center;
+	text-wrap: nowrap;
+	border-bottom: solid 3px #E5383B;
+}
+.footer-info p {
+	margin: 2%;
+	font-weight: 300;
+	font-size: 2.25vh;
+	color: #FFFFFF;
+	text-wrap: nowrap;
+	text-align: center;
+}
+.footer-info p strong {
+	font-weight: 900;
+}
+#footer-nav {
+	padding-right: 10px;
+	position: relative;
+	border-right: solid 3px #E5383B;
+}
+#footer-nav p {
+	text-align: right;
+}
+#footer-contact {
+	padding-right: 10px;
+	position: relative;
+	border-right: solid 3px #E5383B;
+}
+#footer-contact p {
+	text-align: right;
+	height: 2.25vh;
+}
+#footer-follow {
+	padding-right: 10px;
+	position: relative;
+	border-right: solid 3px #E5383B;
+}
+#footer-follow div {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr 1fr;
 }
 
 
