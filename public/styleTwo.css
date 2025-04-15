@@ -1,4 +1,16 @@
-#extracuricular {
-    background-color: #161A1D;
+#il {
     width: 100vw;
+    background-color: #202020;
+    background-image: url(./pictures/IMG_6664.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    transition: background-image 1s;
+}
+#main-il {
+    width: 25vw;
+    opacity: 1;
+}
+#images-il {
+    width: 100vw;
+    background-color: #BA181B;
 }

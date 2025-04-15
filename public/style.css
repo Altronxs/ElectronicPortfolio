@@ -336,7 +336,7 @@ a {
 }
 .box h3 {
 	margin: 20px 0px 10px 30px;
-	margin-left: 25px;
+	margin-left: 35px;
 	padding-left: 25px;
 	padding-right: 15px;
 	font-size: 3vh;
@@ -476,7 +476,9 @@ hr {
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 1fr 1fr;
 }
-
+.blur {
+	backdrop-filter: blur(5px);
+}
 
 
 
@@ -502,7 +504,7 @@ hr {
 }
 #title h1 {
 	color: #F5F3F4;
-	font-size: 8vh;
+	font-size: 5vh;
 	margin-top: 3vh;
 	margin-bottom: 0vh;
 	margin-left: 11vw;
@@ -518,7 +520,7 @@ hr {
 }
 #title h3 {
 	color: #F5F3F4;
-	font-size: 4vh;
+	font-size: 3vh;
 	margin-top: 0vh;
 	margin-bottom: 1vh;
 	margin-left: 11vw;
