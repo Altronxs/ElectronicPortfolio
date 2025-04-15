@@ -29,12 +29,12 @@ a {
 }
 .left-column {
 	width: 50%;
-	min-width: 650px;
+	min-width: 550px;
 	float: left;
 }
 .right-column {
 	width:  50%;
-	min-width: 650px;
+	min-width: 550px;
 	float: right;
 }
 .left-column img {
@@ -328,11 +328,18 @@ a {
 .box h2 {
 	margin-bottom: 10px;
 }
-.box h1, .box h2, .box p, .box hr  {
+.box h1, .box h2, .box p, .box hr {
 	margin: 10px;
 	padding-left: 15px;
 	padding-right: 15px;
 	text-wrap: balance;
+}
+.box h3 {
+	margin: 20px 0px 10px 30px;
+	margin-left: 25px;
+	padding-left: 25px;
+	padding-right: 15px;
+	font-size: 3vh;
 }
 .gray {
 	background-color: rgba(255, 255, 255, 0.1);
@@ -443,6 +450,9 @@ hr {
 	padding-right: 10px;
 	position: relative;
 	border-right: solid 3px #E5383B;
+}
+#footer-nav a p:hover {
+	color: #161A1D;
 }
 #footer-nav p {
 	text-align: right;
