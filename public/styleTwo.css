@@ -9,7 +9,9 @@
 #main-il {
     width: 25vw;
     opacity: 1;
+    margin-top: 20%;
 }
+
 #images-il {
     width: 100vw;
     background-color: #BA181B;
