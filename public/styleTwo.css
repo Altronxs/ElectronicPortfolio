@@ -14,11 +14,23 @@
     background-blend-mode: multiply;
     transition: background-image 1s;
 }
+#iet {
+    width: 100vw;
+    background-color: #202020;
+    background-image: url(./pictures/scioly-main.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    transition: background-image 1s;
+}
 #main-il {
     width: 25vw;
     margin-top: 20%;
 }
 #main-scioly {
-    width: 15vw;
+    width: 25vw;
+    margin-top: 20%;
+}
+#main-iet {
+    width: 25vw;
     margin-top: 20%;
 }

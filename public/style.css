@@ -479,15 +479,19 @@ hr {
 .blur {
 	backdrop-filter: blur(5px);
 }
-
-
-
-
-
-
-
-
-
+.learn-more p {
+	margin: 10px;
+	padding: 5px;
+	text-wrap: nowrap;
+	background-color: #E5383B;
+	width: min-content;
+	border-radius: 5px;
+	transition: all 250ms;
+	font-size: 1.5vh;
+}
+.learn-more p:hover {
+	background-color: #A4161A;
+}
 
 
 
