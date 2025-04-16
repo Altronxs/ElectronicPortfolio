@@ -1,3 +1,4 @@
+html { scroll-behavior: smooth; } 
 body {
 	background-color: black;
 	font-family: "Outfit", sans-serif;
@@ -137,7 +138,25 @@ a {
 	height: 100vh;
 	position: absolute;
 }
+.blue .dash, .blue hr {
+	color: #00A6FB !important;
+	border-color: #0582CA !important;
+}
+.blue-imgr {
+	right: 15px;
+	box-shadow: 10px 5px #006494, 20px 10px #0582CA, 30px 15px #00A6FB !important;
+}
 
+.blue-imgl {
+	left: 15px;
+	box-shadow: -10px 5px #006494, -20px 10px #0582CA, -30px 15px #00A6FB !important;
+}
+.blue-imgl:hover {
+	box-shadow: -15px 10px #006494, -30px 20px #0582CA, -45px 30px #00A6FB !important;
+}
+.blue-imgr:hover {
+	box-shadow: 15px 10px #006494, 30px 20px #0582CA, 45px 30px #00A6FB !important;
+}
 
 
 
@@ -236,6 +255,9 @@ a {
 	color:#BA181B;
 	text-decoration: underline #BA181B;
 	font-size: 3.1vh;
+	scroll-behavior: smooth;
+  	scroll-margin-top: 10vh; /* Optional adjustment */
+
 }
 #extra {
 	height: 0vh;
