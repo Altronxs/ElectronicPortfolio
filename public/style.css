@@ -178,6 +178,8 @@ a {
 	border-bottom: solid 1px #D3D3D3;
 	box-shadow: 0px 0px 10px  #9c9c9c;
 	z-index: 3;
+	position: relative;
+	transition: all 250ms;
 }
 #header h1 {
 	background-color: #BA181B;
@@ -224,18 +226,22 @@ a {
 }
 #wbl {
 	height: 0vh;
+	visibility: hidden;
 	width: 100vw;
 	background-color: #F5F3F4;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
-	transition: all 1s;
+	transition: all 1s ease-in-out;
 	transition-delay: 500ms;
 	box-shadow: 0px 0px 10px  #d9d9d9;
-	z-index: 2;
+	z-index: 1;
+	
 }
 #wbl a, #extra a {
+	visibility: inherit;
+	opacity: 1;
 	text-align: center;
 	width: 20%;
 	padding-top: 1.5vh;
@@ -249,6 +255,10 @@ a {
 	color: #161A1D;
 	padding-bottom: 0%;
 	box-shadow: 0px 0px 10px  #d9d9d9;
+	position: relative;
+	bottom: 9vh;
+	transition: all 1s ease-in-out;
+	transition-delay: 500ms;
 }
 #wbl a:hover,
 #extra a:hover {
@@ -261,15 +271,23 @@ a {
 }
 #extra {
 	height: 0vh;
+	visibility: hidden;
 	width: 100vw;
 	background-color: #F5F3F4;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: center;
-	transition: all 1s;
+	transition: all 1s ease-in-out;
 	transition-delay: 500ms;
 	z-index: 2;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+	z-index: 5;
 }
 /* NAVBAR CSS END */
 

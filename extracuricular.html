@@ -1,45 +1,47 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Kyle Alexander Baldovi</title>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Kyle Alexander Baldovi</title>
 
-	<!--CSS LINK-->
-	<link rel="stylesheet" type="text/css" href="./public/style.css">
-    <link rel="stylesheet" type="text/css" href="./public/styleTwo.css">
+		<!--CSS LINK-->
+		<link rel="stylesheet" type="text/css" href="./public/style.css">
+		<link rel="stylesheet" type="text/css" href="./public/styleTwo.css">
 
-	<!--Outfit Font-->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+		<!--Outfit Font-->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-	<script src="./navbar.js"></script>
-	<script src="./extracuricular.js"></script>
-</head>
+		<script src="./navbar.js"></script>
+		<script src="./extracuricular.js"></script>
+	</head>
 	<body>
 		<!--Header-->
-		<header id="header">
-			<a href="./index.html"><h1>Kyle Alexander Baldovi</h1></a>
-			<button style="margin-right: 20px;" id="ext" onclick="redirect('./extracuricular.html')">Extracuriculars</button>
-			<button id="wblt">WBL</button>
-		</header>
-		<div id="dropdown">
-			<div id="wbl">
-				<a href="./project.html">Projects</a>
-				<a>Certifications</a>
-				<a>Awards</a>
-				<a>Experiences</a>
-			</div>
-			<div id="extra">
-				<a>Clubs</a>
-				<a>Community Service</a>
-				<a>Hobbies</a>
-				<a href="./extracuricular.html">Leadership</a>
+		<div id="navbar" class="fixed">
+			<header id="header">
+				<a href="./index.html"><h1>Kyle Alexander Baldovi</h1></a>
+				<button style="margin-right: 20px;" id="ext" onclick="redirect('./extracuricular.html')">Extracuriculars</button>
+				<button id="wblt">WBL</button>
+			</header>
+			<div id="dropdown">
+				<div id="wbl">
+					<a class="wbltt" href="./project.html">Projects</a>
+					<a class="wbltt" >Certifications</a>
+					<a class="wbltt" >Awards</a>
+					<a class="wbltt" >Experiences</a>
+				</div>
+				<div id="extra">
+					<a class="extt">Clubs</a>
+					<a class="extt">Community Service</a>
+					<a class="extt">Hobbies</a>
+					<a class="extt" href="./extracuricular.html#il">Leadership</a>
+				</div>
 			</div>
 		</div>
         <!--Header-End-->
-		<div id="title">
+		<div id="title" style="margin-top: 8vh;">
 			<h1><strong class="dash">// </strong>Leadership</h1>
 			<h3>2022-Present</h3>
 			<hr>
@@ -96,6 +98,43 @@
 					<p style="margin-left: 65px;">IET never got a proper house day so I and couple of friends decided to make our own "house day"</p>
 					<a class="learn-more"><p style="margin-left: 90px;">Learn More</p></a>
 				</div>
+			</div>
+		</div>
+		<div id="title">
+			<h1><strong class="dash">// </strong>Clubs</h1>
+			<h3>2022-Present</h3>
+			<hr>
+        </div>
+		<div id="scioly">
+			<div class="left-column">
+				<div class="boxl box transparent-black blue" style="margin-top: 20%;">
+					<h2><strong class="dash">// </strong>Science Olympiad</h2>
+					<hr>
+					<p>The first club that I joined which allowed me to grow roots in Waipahu</p>
+					<h3><strong class="dash">/ </strong>Member ~ Joined in Freshmen Year</h3>
+					<h3><strong class="dash">/ </strong>Freshmen Year ~ 2022-2023</h3>
+					<ul style="margin-left: 25px;">
+						<li><p>3rd in Astronomy ~ Invitational</p></li>
+						<li><p>3rd in Remote Sensing ~ Invitational</p></li>
+						<li><p>2nd in Bridges ~ Invitational</p></li>
+						<li><p>2nd in Dynamic Planet ~ States</p></li>
+					</ul>
+					<h3><strong class="dash">/ </strong>Sophmore Year ~ 2023-2024</h3>
+					<ul style="margin-left: 25px;">
+						<li><p>1st in Flight ~ Regionals</p></li>
+						<li><p>3rd in Flight ~ States</p></li>
+					</ul>
+					<h3><strong class="dash">/ </strong>Junior Year ~ 2024-2025</h3>
+					<ul style="margin-left: 25px;">
+						<li><p>3st in Dynamic Planet ~ Regionals</p></li>
+						<li><p>3rd in Helicopter ~ States</p></li>
+						<li><p>3rd in Ecology ~ States</p></li>
+					</ul>
+					<a class="learn-more"><p style="margin-left: 90px;background-color: #0582CA;">Learn More</p></a>
+				</div>
+			</div>
+			<div class="right-column">
+				<img id="main-scioly" class="blue-imgr" src="./public/pictures/scioly-second.JPG">
 			</div>
 		</div>
 		<div id="lang-container">
