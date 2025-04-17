@@ -144,18 +144,24 @@ a {
 }
 .blue-imgr {
 	right: 15px;
-	box-shadow: 10px 5px #006494, 20px 10px #0582CA, 30px 15px #00A6FB !important;
+	box-shadow: 10px 5px #FFC300, 20px 10px #001D3D, 30px 15px #003566 !important;
 }
 
 .blue-imgl {
 	left: 15px;
-	box-shadow: -10px 5px #006494, -20px 10px #0582CA, -30px 15px #00A6FB !important;
+	box-shadow: -10px 5px #FFC300, -20px 10px #001D3D, -30px 15px #003566 !important;
 }
 .blue-imgl:hover {
-	box-shadow: -15px 10px #006494, -30px 20px #0582CA, -45px 30px #00A6FB !important;
+	box-shadow: -15px 10px #FFC300, -30px 20px #001D3D, -45px 30px #003566 !important;
 }
 .blue-imgr:hover {
-	box-shadow: 15px 10px #006494, 30px 20px #0582CA, 45px 30px #00A6FB !important;
+	box-shadow: 15px 10px #FFC300, 30px 20px #001D3D, 45px 30px #003566 !important;
+}
+.blue a p {
+	background-color: #0582CA;
+}
+.blue a p:hover {
+	background-color: #003566;
 }
 
 
@@ -544,12 +550,11 @@ hr {
 	width: 100vw;
 	height: fit-content;
 	background-color: #BA181B;
-	border-top: solid 1px #ffffff;
 }
 .title h1 {
 	color: #F5F3F4;
 	font-size: 5.5vh;
-	margin-top: 3vh;
+	margin-top: 1vh;
 	margin-bottom: 0vh;
 	margin-left: 11vw;
 	position: relative;
@@ -560,7 +565,7 @@ hr {
 	border: solid 2px #ffffff;
 	margin-left: 10vw;
 	width: 25%;
-	margin-bottom: 5vh;
+	margin-bottom: 2vh;
 }
 .title h3 {
 	color: #F5F3F4;

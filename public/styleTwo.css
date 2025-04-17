@@ -30,6 +30,15 @@
     background-blend-mode: multiply;
     transition: background-image 1s;
 }
+#nths-c {
+    width: 100vw;
+    background-color: #252525;
+    background-image: url("https://www.monroe.edu//cms/lib/NY02216770/Centricity/Domain/8/nths1.png");
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-position: 25% 50%;
+    transition: background-image 1s;
+}
 #main-il {
     width: 25vw;
     margin-top: 20%;
@@ -40,12 +49,21 @@
 }
 #main-scioly-c {
     width: 40vw;
-    margin-top: 30%;
+    margin-top: 35%;
 }
 #main-iet {
     width: 25vw;
     margin-top: 20%;
 }
+#main-nths-c {
+    width: 25vw;
+    margin-top: 15%;
+}
 ul li {
     list-style-type: none;
+}
+#clubs, #leadership {
+    box-shadow: 0px 0px 0px 20px #A4161A, 0px 0px 0px 40px #660708;
+    position: relative;
+    z-index: 2;
 }
