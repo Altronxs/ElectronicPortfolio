@@ -8,10 +8,11 @@ window.onload = function () {
             roles.style.backgroundPositionY = '50%';
             count = 2;
        } else if (count == 2) {
-            roles.style.backgroundImage = "url('./public/pictures/IMG_6665.jpg')";
-            count = 3;
+            
+            roles.style.backgroundImage = "url('./public/pictures/IMG_1787.jpg')";
+            count = 1;
        } else if (count == 3) {
-          roles.style.backgroundImage = "url('./public/pictures/IMG_1787.jpg')";
+          //roles.style.backgroundImage = "url('./public/pictures/IMG_6665.jpg')";
           count = 1;
        }
     }

@@ -1,22 +1,30 @@
 #il {
     width: 100vw;
-    background-color: #393939;
+    background-color: #252525;
     background-image: url(./pictures/IMG_6664.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     transition: background-image 1s;
 }
-#scioly {
+#scioly{
     width: 100vw;
-    background-color: #393939;
+    background-color: #252525;
     background-image: url(./pictures/scioly-main.jpg);
+    background-size: cover;
+    background-blend-mode: multiply;
+    transition: background-image 1s;
+}
+#scioly-c {
+    width: 100vw;
+    background-color: #252525;
+    background-image: url(./pictures/scioly-main-c.jpg);
     background-size: cover;
     background-blend-mode: multiply;
     transition: background-image 1s;
 }
 #iet {
     width: 100vw;
-    background-color: #393939;
+    background-color: #252525;
     background-image: url(./pictures/scioly-main.jpg);
     background-size: cover;
     background-blend-mode: multiply;
@@ -29,6 +37,10 @@
 #main-scioly {
     width: 25vw;
     margin-top: 20%;
+}
+#main-scioly-c {
+    width: 40vw;
+    margin-top: 30%;
 }
 #main-iet {
     width: 25vw;

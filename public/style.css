@@ -540,13 +540,13 @@ hr {
 
 
 
-#title {
+.title {
 	width: 100vw;
 	height: fit-content;
 	background-color: #BA181B;
 	border-top: solid 1px #ffffff;
 }
-#title h1 {
+.title h1 {
 	color: #F5F3F4;
 	font-size: 5.5vh;
 	margin-top: 3vh;
@@ -556,13 +556,13 @@ hr {
 	transition: all 250ms ease;
 	bottom: 0vh;;
 }
-#title hr {
+.title hr {
 	border: solid 2px #ffffff;
 	margin-left: 10vw;
 	width: 25%;
 	margin-bottom: 5vh;
 }
-#title h3 {
+.title h3 {
 	color: #F5F3F4;
 	font-size: 3.5vh;
 	margin-top: 0vh;
@@ -572,10 +572,10 @@ hr {
 	transition: all 250ms ease;
 	bottom: 0vh;
 }
-#title h1:hover {
+.title h1:hover {
 	bottom: 0.5vh;
 }
-#title h3:hover {
+.title h3:hover {
 	bottom: 0.5vh;
 }
 #timeline {
