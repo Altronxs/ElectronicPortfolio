@@ -1,0 +1,42 @@
+#clubs, #leadership, #hobbies, #community {
+    box-shadow: 0px 0px 0px 20px #A4161A, 0px 0px 0px 40px #660708;
+    position: relative;
+    z-index: 2;
+}
+#projects {
+    position: relative;
+    top: 8vh;
+    box-shadow: 0px 10px #A4161A, 0px 20px #660708;
+}
+#project-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    width: 100vw;
+    height: fit-content;
+    padding: 20px;
+}
+.container {
+    position: relative;
+    width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0%;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    aspect-ratio: 1 / 1;
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity:0;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    z-index: 3;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+    opacity: 1;
+}

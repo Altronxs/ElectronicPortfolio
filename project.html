@@ -7,115 +7,77 @@
 
 	<!--CSS LINK-->
 	<link rel="stylesheet" type="text/css" href="./public/style.css">
+	<link rel="stylesheet" type="text/css" href="./public/extraTwo.css">
+	<link rel="stylesheet" type="text/css" href="./public/project.css">
 
 	<!--Outfit Font-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
-	<script src="./index.js"></script>
+	<script src="./navbar.js"></script>
 </head>
 	<body>
         <!--Header-->
-		<header id="header">
-			<a href="./index.html"><h1>Kyle Alexander Baldovi</h1></a>
-			<button style="margin-right: 20px;" id="ext" onclick="redirect('./extracuricular.html')">Extracuriculars</button>
-			<button id="wblt">WBL</button>
-		</header>
-		<div id="dropdown">
-			<div id="wbl">
-				<a href="./project.html">Projects</a>
-				<a>Certifications</a>
-				<a>Awards</a>
-				<a>Experiences</a>
-			</div>
-			<div id="extra">
-				<a>Clubs</a>
-				<a>Community Service</a>
-				<a>Hobbies</a>
-				<a>Leadership</a>
+		<div id="navbar" class="fixed">
+			<header id="header">
+				<a href="./index.html"><h1>Kyle Alexander Baldovi</h1></a>
+				<button style="margin-right: 20px;" id="ext" onclick="redirect('./extracuricular.html')">Extracuriculars</button>
+				<button id="wblt">WBL</button>
+			</header>
+			<div id="dropdown">
+				<div id="wbl">
+					<a class="wbltt" href="./project.html">Projects</a>
+					<a class="wbltt" >Certifications</a>
+					<a class="wbltt" >Awards</a>
+					<a class="wbltt" >Experiences</a>
+				</div>
+				<div id="extra">
+					<a class="extt" href="./extracuricular.html#hobbies">Hobbies</a>
+					<a class="extt" href="./extracuricular.html#community">Community Service</a>
+					<a class="extt" href="./extracuricular.html#clubs">Clubs</a>
+					<a class="extt" href="./extracuricular.html#leadership">Leadership</a>
+				</div>
 			</div>
 		</div>
-        <!--Header-->
-        <div id="title">
-			<h1>Projects</h1>
-			<h3>2019-Present</h3>
+        <!--Header-End-->
+        <div class="title" id="projects">
+			<br>
+			<h1><strong class="dash">// </strong>Projects</h1>
+			<h3>2022-Present</h3>
 			<hr>
         </div>
-		<div id="timeline">
-			<div id="nine" class="date-container">
-				<h1 class="date"><strong>//</strong>2019</h1>
-				<hr>
-			</div>	
-			<div id="nineteen" class="project-container">
-				<div class="project">
-					<a href="https://codeprojects.org/projects/weblab/PUP-ToqHcOssU1lI_YT_--b2nAOChXf-UuFKsCu23wk/">
-						<img src="./public/pictures/fiirst.png" class="imgo">
-					</a>
-					<h2><strong>/</strong>First Website</h2>
-				</div>
-				<div class="project">
-					<a href="https://studio.code.org/projects/gamelab/XgC_2PO63kst-NibhXzm1SN2phnQftYrASTWHGuhIRI">
-						<img src="./public/pictures/game.png" class="imgo">
-					</a>
-					<h2><strong>/</strong>First Game</h2>
-				</div>
+		<div id="project-container">
+			<div class="project">
+				<a class="container" href="https://codeprojects.org/projects/weblab/PUP-ToqHcOssU1lI_YT_--b2nAOChXf-UuFKsCu23wk/">
+					<img src="./public/pictures/fiirst.png" class="imgo">
+					<div class="overlay"><h2><strong>/</strong>First Webpage</h2></div>
+				</a>
 			</div>
-			<div id="two" class="date-container">
-				<h1 class="date"><strong>//</strong>2020</h1>
-				<hr>
+			<div class="project">
+				<a class="container" href="https://studio.code.org/projects/gamelab/XgC_2PO63kst-NibhXzm1SN2phnQftYrASTWHGuhIRI">
+					<img src="./public/pictures/game.png" class="imgo">
+					<div class="overlay"><h2><strong>/</strong>First Game</h2></div>
+				</a>
+				
 			</div>
-			<div id="twenty" class="project-container">
-				<div class="project">
-					<a href="https://codeprojects.org/projects/weblab/PUP-ToqHcOssU1lI_YT_--b2nAOChXf-UuFKsCu23wk/">
-						<img src="./public/pictures/treat.png" class="imgo">
-					</a>
-					<h2><strong>/</strong>Treat Dispenser</h2>
-				</div>
-				<div class="project">
-					<a href="https://studio.code.org/projects/gamelab/XgC_2PO63kst-NibhXzm1SN2phnQftYrASTWHGuhIRI">
-						<img src="./public/pictures/game.png" class="imgo">
-					</a>
-					<h2><strong>/</strong>First Game</h2>
-				</div>
-			</div>
-			<div style="grid-area: twenty-one-text" class="date-container">
-				<h1 class="date"><strong>//</strong>2021</h1>
-				<hr>
-			</div>
-			<div style="grid-area: twenty-one;" class="project-container">
-				<div class="project">
-					<a href="https://codeprojects.org/projects/weblab/PUP-ToqHcOssU1lI_YT_--b2nAOChXf-UuFKsCu23wk/">
-						<img src="./public/pictures/treat.png" class="imgo">
-					</a>
-					<h2><strong>/</strong>Treat Dispenser</h2>
-				</div>
-				<div class="project">
-					<a href="https://studio.code.org/projects/gamelab/XgC_2PO63kst-NibhXzm1SN2phnQftYrASTWHGuhIRI">
-						<img src="./public/pictures/game.png" class="imgo">
-					</a>
-					<h2><strong>/</strong>First Game</h2>
-				</div>
-			</div>
-			<div style="grid-area: twenty-two-text" class="date-container">
-				<h1 class="date"><strong>/</strong>2022</h1>
-				<hr>
-			</div>
-			<div style="grid-area: twenty-two;" class="project-container">
-				<div class="project">
-					<a href="https://codeprojects.org/projects/weblab/PUP-ToqHcOssU1lI_YT_--b2nAOChXf-UuFKsCu23wk/">
-						<img src="./public/pictures/treat.png" class="imgo">
-					</a>
-					<h2><strong>/</strong>Treat Dispenser</h2>
-				</div>
-				<div class="project">
-					<a href="https://studio.code.org/projects/gamelab/XgC_2PO63kst-NibhXzm1SN2phnQftYrASTWHGuhIRI">
-						<img src="./public/pictures/game.png" class="imgo">
-					</a>
-					<h2><strong>/</strong>First Game</h2>
-				</div>
+			<div class="project">
+				<a href="https://codeprojects.org/projects/weblab/PUP-ToqHcOssU1lI_YT_--b2nAOChXf-UuFKsCu23wk/">
+					<img src="./public/pictures/treat.png" class="imgo">
+				</a>
+				<h2><strong>/</strong>Treat Dispenser</h2>
 			</div>
 		</div>
+
+
+
+			
+			
+			
+		
+
+
+
 		<div id="lang" class="transparent-black">
 			<h2><strong class="dash">// </strong>Skills</h2>
 			<hr style="border-color: #F5F3F4">
