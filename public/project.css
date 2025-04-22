@@ -11,32 +11,63 @@
 #project-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    width: 100vw;
+    column-gap: 40px;
+    row-gap: 40px;
+    width: 90vw;
     height: fit-content;
-    padding: 20px;
-}
-.container {
+    justify-content: center;
+    padding: 5vw;
+    background-color: #F5F3F4;
     position: relative;
-    width: 100%;
+    top: 8vh;
 }
-
+.container-one-one {
+    position: relative;
+}
+.imgo {
+	width: 100%;
+	aspect-ratio: 1 / 1;
+	object-fit: cover;
+	object-position: 55%;
+	border-radius: 25px;
+	position: relative;
+	transition: all 250ms;
+	z-index: 2;
+	margin: 0%;
+	border: solid 5px #F5F3F4;
+	filter:  grayscale(50%);
+    box-shadow:  13px 13px 21px #626162,
+             -13px -13px 21px #ffffff;
+}
+.project {
+    justify-self: center;
+    
+}
 .overlay {
     position: absolute;
-    bottom: 0%;
+    bottom:  20%;
     background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.5); /* Black see-through */
+    background: rgba(0, 0, 0, 0.65); 
     aspect-ratio: 1 / 1;
     color: #f1f1f1;
     width: 100%;
-    transition: .5s ease;
+    transition: .75s ease;
     opacity:0;
-    color: white;
     text-align: center;
     justify-content: center;
     z-index: 3;
+    border-radius: 25px;
 }
-
-/* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
+.overlay img {
+    width: 75%;
+    opacity: 0.5;
+}
+.overlay h2 {
+    font-size: 3vh;
+    padding: 3vh;
+}
+.container-one-one:hover .overlay {
     opacity: 1;
+    backdrop-filter: blur(2px);
+    box-shadow: 5px 5px #A4161A, 10px 10px #BA181B, 15px 15px #E5383B;
 }

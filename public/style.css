@@ -138,6 +138,9 @@ a {
 	height: 100vh;
 	position: absolute;
 }
+.dash {
+	color: #BA181B;
+}
 .blue .dash, .blue hr {
 	color: #00A6FB !important;
 	border-color: #0582CA !important;
@@ -628,26 +631,4 @@ hr {
 #nineteen {
 	grid-area: first;
 }
-.project .imgo {
-	width: 99%;
-	aspect-ratio: 1 / 1;
-	object-fit: cover;
-	object-position: 55%;
-	border-radius: 20px;
-	display: inline;
-	position: relative;
-	transition: all 250ms;
-	z-index: 2;
-	margin: 0%;
-	border: solid 2px white;
-	filter:  grayscale(10%);
-}
-.project-container {
-	grid-area: first;
-	background-color: #f5f3f400;
-	display: flex;
-	flex-wrap: wrap;
-	height: fit-content;
-	align-content: center;
-	justify-content: center;
-}
+
