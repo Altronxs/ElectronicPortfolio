@@ -534,6 +534,7 @@ hr {
 	border-radius: 5px;
 	transition: all 250ms;
 	font-size: 1.5vh;
+	color: #FFFFFF;
 }
 .learn-more p:hover {
 	background-color: #A4161A;
@@ -545,7 +546,17 @@ hr {
 
 
 
-
+.shields {
+	height: 2.5vh;
+	width: fit-content !important;
+	margin: 1% !important;
+	box-shadow: none !important;
+	display: inline !important;
+	top: 1vh;
+}
+.shields:hover {
+	right: 0% !important;
+}
 .title {
 	width: 100vw;
 	height: fit-content;

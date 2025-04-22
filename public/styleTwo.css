@@ -62,11 +62,35 @@
 ul li {
     list-style-type: none;
 }
-#clubs, #leadership {
+#clubs, #leadership, #community, #hobbies {
     box-shadow: 0px 0px 0px 20px #A4161A, 0px 0px 0px 40px #660708;
     position: relative;
     z-index: 2;
 }
 #leadership {
     margin-top: 12vh;
+}
+#il-community {
+    width: 100vw;
+    background-color: #aeaeae;
+}
+#scioly-community {
+    width: 100vw;
+    background-color: #D3D3D3;
+}
+#nths-community {
+    width: 100vw;
+    background-color: #F5F3F4;
+}
+#self-community {
+    width: 100vw;
+    background-color: #FFFFFF;
+}
+#homelab {
+    width: 100vw;
+    background-color: #252525;
+    background-image: url(./pictures/truenas.png);
+    background-size: cover;
+    background-blend-mode: multiply;
+    transition: background-image 1s;
 }
