@@ -24,8 +24,9 @@
 }
 #iet {
     width: 100vw;
-    background-color: #252525;
-    background-image: url(./pictures/scioly-main.jpg);
+    background-color: #3d3d3d;
+    background-image: url(./pictures/IMG_6643.jpg);
+    background-position: center;
     background-size: cover;
     background-blend-mode: multiply;
     transition: background-image 1s;
@@ -52,7 +53,7 @@
     margin-top: 35%;
 }
 #main-iet {
-    width: 25vw;
+    width: 30vw;
     margin-top: 20%;
 }
 #main-nths-c {
@@ -62,35 +63,40 @@
 ul li {
     list-style-type: none;
 }
-#clubs, #leadership, #community, #hobbies {
+#clubs, #leadership, #hobbies, #community {
     box-shadow: 0px 0px 0px 20px #A4161A, 0px 0px 0px 40px #660708;
     position: relative;
     z-index: 2;
 }
 #leadership {
-    margin-top: 12vh;
+    margin-top: 10vh;
 }
-#il-community {
-    width: 100vw;
-    background-color: #aeaeae;
-}
-#scioly-community {
-    width: 100vw;
-    background-color: #D3D3D3;
-}
-#nths-community {
+#one-community {
     width: 100vw;
     background-color: #F5F3F4;
 }
-#self-community {
+#two-community {
     width: 100vw;
     background-color: #FFFFFF;
 }
 #homelab {
     width: 100vw;
-    background-color: #252525;
+    background-color: #3d3d3d;
     background-image: url(./pictures/truenas.png);
     background-size: cover;
     background-blend-mode: multiply;
     transition: background-image 1s;
+}
+#photography {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d9d9d9;
+    background-image: url(./pictures/_MG_0407.JPG);
+    background-size: cover;
+    background-position: 100% center;
+    background-blend-mode: multiply;
+    transition: background-image 1s;
+}
+#main-photography {
+    width: 25vw;
 }

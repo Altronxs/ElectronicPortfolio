@@ -180,8 +180,6 @@ a {
 	background-color: #F5F3F4;
 	width: 100vw;
 	height: 8vh;
-	border-top: solid 2px #D3D3D3;
-	border-bottom: solid 1px #D3D3D3;
 	box-shadow: 0px 0px 10px  #9c9c9c;
 	z-index: 3;
 	position: relative;
@@ -191,10 +189,10 @@ a {
 	background-color: #BA181B;
 	float: left;
 	color: #ffffff;
-	height: 3vh;
 	font-size: 3vh;
-	padding: 2.5vh;
+	line-height: 8vh;
 	padding-left: 2.25vw;
+	padding-right: 1vw;
 	width: fit-content;
 	display: inline;
 	margin: 0%;
@@ -369,7 +367,7 @@ a {
 	width: 35vw;
 	padding: 25px;
 	border-radius: 15px;
-	margin-left: 7%;
+	margin-left: 15%;
 }
 .box h2 {
 	margin-bottom: 10px;
