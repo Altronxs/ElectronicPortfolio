@@ -34,8 +34,7 @@
 	transition: all 250ms;
 	z-index: 2;
 	margin: 0%;
-	border: solid 5px #F5F3F4;
-	filter:  grayscale(50%);
+	filter:  brightness(115%);
     box-shadow:  13px 13px 21px #626162,
              -13px -13px 21px #ffffff;
 }
@@ -68,6 +67,6 @@
 }
 .container-one-one:hover .overlay {
     opacity: 1;
-    backdrop-filter: blur(2px);
+    backdrop-filter: blur(5px);
     box-shadow: 5px 5px #A4161A, 10px 10px #BA181B, 15px 15px #E5383B;
 }
