@@ -1,32 +1,29 @@
-#clubs, #leadership, #hobbies, #community {
-    box-shadow: 0px 0px 0px 20px #A4161A, 0px 0px 0px 40px #660708;
-    position: relative;
-    z-index: 2;
-}
 #projects {
     position: relative;
-    top: 8vh;
-    box-shadow: 0px 10px #A4161A, 0px 20px #660708;
+    top: 7vh;
+    box-shadow: 0px 1vh #A4161A, 0px 2vh #660708;
 }
 #project-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 40px;
-    row-gap: 40px;
+    grid-template-areas: 'first-w first-g treat treat';
+    column-gap: 20px;
+    row-gap: 20px;
     width: 90vw;
     height: fit-content;
     justify-content: center;
     padding: 5vw;
-    background-color: #F5F3F4;
+    background: linear-gradient(135deg,rgba(245, 243, 244, 1) 0%, rgba(211, 211, 211, 1) 50%);
     position: relative;
-    top: 8vh;
+    top: 9vh;
 }
 .container-one-one {
     position: relative;
 }
+.container-one-two {
+    position: relative;
+}
 .imgo {
 	width: 100%;
-	aspect-ratio: 1 / 1;
 	object-fit: cover;
 	object-position: 55%;
 	border-radius: 25px;
@@ -34,20 +31,24 @@
 	transition: all 250ms;
 	z-index: 2;
 	margin: 0%;
-	filter:  brightness(115%);
-    box-shadow:  13px 13px 21px #626162,
-             -13px -13px 21px #ffffff;
+	filter:  brightness(110%);
+    box-shadow:  19px 19px 71px #888888,
+                -19px -19px 71px #f2f2f2;
 }
 .project {
     justify-self: center;
-    
+    position: relative;
+    transition: all 250ms;
+    bottom: 0%;
+}
+.project:hover {
+    bottom: 3%;
 }
 .overlay {
     position: absolute;
     bottom:  20%;
     background: rgb(0, 0, 0);
     background: rgba(0, 0, 0, 0.65); 
-    aspect-ratio: 1 / 1;
     color: #f1f1f1;
     width: 100%;
     transition: .75s ease;
@@ -57,8 +58,18 @@
     z-index: 3;
     border-radius: 25px;
 }
-.overlay img {
+.container-one-one .overlay {
+    aspect-ratio: 1 / 1;
+}
+.container-one-two .overlay {
+    aspect-ratio: 2 / 1;
+}
+.container-one-one .overlay img {
     width: 75%;
+    opacity: 0.5;
+}
+.container-one-two .overlay img {
+    width: 50%;
     opacity: 0.5;
 }
 .overlay h2 {
@@ -69,4 +80,13 @@
     opacity: 1;
     backdrop-filter: blur(5px);
     box-shadow: 5px 5px #A4161A, 10px 10px #BA181B, 15px 15px #E5383B;
+}
+.container-one-two:hover .overlay {
+    opacity: 1;
+    backdrop-filter: blur(5px);
+    box-shadow: 5px 5px #A4161A, 10px 10px #BA181B, 15px 15px #E5383B;
+}
+#lang, #lang-container {
+    position: relative;
+    top: 9vh;
 }
