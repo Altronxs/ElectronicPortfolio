@@ -5,14 +5,15 @@
 }
 #project-container {
     display: grid;
-    grid-template-areas: 'first-w first-g treat treat';
+    grid-template-areas: 'first-w first-g treat treat'
+                         'robot-tour o o o';
     column-gap: 20px;
     row-gap: 20px;
     width: 90vw;
     height: fit-content;
     justify-content: center;
     padding: 5vw;
-    background: linear-gradient(135deg,rgba(245, 243, 244, 1) 0%, rgba(211, 211, 211, 1) 50%);
+    background: linear-gradient(90deg,rgba(207, 207, 207, 1) 0%, rgba(92, 92, 92, 1) 100%);
     position: relative;
     top: 9vh;
 }
@@ -32,8 +33,8 @@
 	z-index: 2;
 	margin: 0%;
 	filter:  brightness(110%);
-    box-shadow:  19px 19px 71px #888888,
-                -19px -19px 71px #f2f2f2;
+    box-shadow:  16px 16px 32px #999999,
+             -16px -16px 32px #c7c7c7;
 }
 .project {
     justify-self: center;
