@@ -1,3 +1,6 @@
+body {
+    background: #F5F3F4 !important;
+}
 #projects {
     position: relative;
     top: 7vh;
@@ -5,26 +8,30 @@
 }
 #project-container {
     display: grid;
-    grid-template-areas: 'first-w first-g treat treat'
-                         'robot-tour o o o';
+    grid-template-areas: 'first-w first-g treat'
+                         'robot-tour o o ';
     column-gap: 20px;
     row-gap: 20px;
-    width: 90vw;
+    width: 96vw;
     height: fit-content;
     justify-content: center;
-    padding: 5vw;
-    background: linear-gradient(90deg,rgba(207, 207, 207, 1) 0%, rgba(92, 92, 92, 1) 100%);
+    
+    background: #F5F3F4;
     position: relative;
+    left: 2vw;
     top: 9vh;
 }
 .container-one-one {
     position: relative;
+    aspect-ratio: 1/1;
+    
 }
-.container-one-two {
-    position: relative;
+.container-one-one h2 {
+    color: #F5F3F4;
 }
 .imgo {
-	width: 100%;
+	width: 90%;
+    margin: 5%;
 	object-fit: cover;
 	object-position: 55%;
 	border-radius: 25px;
@@ -32,61 +39,23 @@
 	transition: all 250ms;
 	z-index: 2;
 	margin: 0%;
-	filter:  brightness(110%);
-    box-shadow:  16px 16px 32px #999999,
-             -16px -16px 32px #c7c7c7;
+	filter:  brightness(125%);
+    aspect-ratio: 2/1;
 }
 .project {
     justify-self: center;
     position: relative;
     transition: all 250ms;
     bottom: 0%;
+    aspect-ratio: 1/1;
+    background-color: #FFFFFF;
+    width: ;
 }
 .project:hover {
     bottom: 3%;
 }
-.overlay {
-    position: absolute;
-    bottom:  20%;
-    background: rgb(0, 0, 0);
-    background: rgba(0, 0, 0, 0.65); 
-    color: #f1f1f1;
-    width: 100%;
-    transition: .75s ease;
-    opacity:0;
-    text-align: center;
-    justify-content: center;
-    z-index: 3;
-    border-radius: 25px;
-}
-.container-one-one .overlay {
-    aspect-ratio: 1 / 1;
-}
-.container-one-two .overlay {
-    aspect-ratio: 2 / 1;
-}
-.container-one-one .overlay img {
-    width: 75%;
-    opacity: 0.5;
-}
-.container-one-two .overlay img {
-    width: 50%;
-    opacity: 0.5;
-}
-.overlay h2 {
-    font-size: 3vh;
-    padding: 3vh;
-}
-.container-one-one:hover .overlay {
-    opacity: 1;
-    backdrop-filter: blur(5px);
-    box-shadow: 5px 5px #A4161A, 10px 10px #BA181B, 15px 15px #E5383B;
-}
-.container-one-two:hover .overlay {
-    opacity: 1;
-    backdrop-filter: blur(5px);
-    box-shadow: 5px 5px #A4161A, 10px 10px #BA181B, 15px 15px #E5383B;
-}
+
+
 #lang, #lang-container {
     position: relative;
     top: 9vh;
