@@ -221,6 +221,7 @@ a {
 
 #header button:hover {
 	visibility: visible;
+	background-color: #BA181B;
 	color: white;
 }
 #header h1:hover {
