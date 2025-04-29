@@ -10,7 +10,8 @@ let particles = [];
 let currentColor = RandomColor();
 let nextColor = RandomColor();
 let mixFactor = 0;
-let transitionSpeed = 0.01;
+let transitionSpeed = 0.005;
+let effect = 0;
 
 
 function hexToRgb(hex) {
@@ -50,8 +51,8 @@ class Particle {
 }
 
 function RandomColor() {
-    const colours = ['#FFFFFF', '#D3D3D3', '#B1A7A6'];
-    return colours[Math.floor(Math.random() * 3)];
+    const colours = ['#FFFFFF', '#D3D3D3'];
+    return colours[Math.floor(Math.random() * 2)];
 }
 
 function initParticles() {
