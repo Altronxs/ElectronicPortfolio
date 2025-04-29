@@ -8,37 +8,28 @@ body {
 }
 #project-container {
     display: grid;
-    grid-template-areas: 'first-w first-g treat'
-                         'robot-tour o o ';
+    grid-template-areas: 'first-w first-g treat robot-tour';
     column-gap: 20px;
     row-gap: 20px;
     width: 96vw;
-    height: fit-content;
+    height: max-content;
+    padding-bottom: 10vh;
     justify-content: center;
-    
     background: #F5F3F4;
     position: relative;
-    left: 2vw;
-    top: 9vh;
-}
-.container-one-one {
-    position: relative;
-    aspect-ratio: 1/1;
-    
-}
-.container-one-one h2 {
-    color: #F5F3F4;
+    top: 14vh;
 }
 .imgo {
-	width: 90%;
-    margin: 5%;
+    display: block;
+    margin: auto auto;
+	width: 96%;
+    margin: 2%;
 	object-fit: cover;
 	object-position: 55%;
-	border-radius: 25px;
+	border-radius: 20px;
 	position: relative;
 	transition: all 250ms;
 	z-index: 2;
-	margin: 0%;
 	filter:  brightness(125%);
     aspect-ratio: 2/1;
 }
@@ -49,13 +40,25 @@ body {
     bottom: 0%;
     aspect-ratio: 1/1;
     background-color: #FFFFFF;
-    width: ;
+    width: 95%;
+    border-radius: 25px;
 }
 .project:hover {
     bottom: 3%;
 }
-
-
+.project-inner-container {
+    display: block;
+    margin: auto auto;
+	width: 90%;
+    margin: 5%;
+}
+.project-inner-container h2 {
+    font-size: 3vh;
+    color: #161A1D;
+}
+.project-inner-container h2 .dash {
+    color: #E5383B;
+}
 #lang, #lang-container {
     position: relative;
     top: 9vh;

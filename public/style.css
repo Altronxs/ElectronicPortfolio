@@ -90,7 +90,7 @@ a {
 	width: 100vw;
 	height: 92vh;
 	z-index: 2;
-	background-color: #F5F3F4;
+	background-color: rgba(245, 243, 244, 0);
 }
 #iam .lcoltt {
 	height: 100%;
@@ -221,6 +221,7 @@ a {
 
 #header button:hover {
 	visibility: visible;
+	background-color: #BA181B;
 	color: white;
 }
 #header h1:hover {
@@ -399,9 +400,10 @@ a {
 .white {
 	border-radius: 25px;
 	border-radius: 25px;
-	background: #F5F3F4;
-	box-shadow: inset 5px 5px 10px #c9c7c8,
-				inset -5px -5px 10px #ffffff;
+	background: rgba(255, 255, 255,0);
+	backdrop-filter: blur(2px);
+	box-shadow:  5px 5px 10px #c9c7c8,
+				 -5px -5px 10px #ffffff;
 	color:#0B090A;
 }
 .transparent-white {
