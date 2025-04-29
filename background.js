@@ -51,7 +51,7 @@ class Particle {
 }
 
 function RandomColor() {
-    const colours = ['#FFFFFF', '#D3D3D3'];
+    const colours = ['#FFFFFF', '#F5F3F4'];
     return colours[Math.floor(Math.random() * 2)];
 }
 

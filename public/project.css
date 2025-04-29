@@ -8,8 +8,9 @@ body {
 }
 #project-container {
     display: grid;
-    grid-template-areas: 'first-w first-g treat robot-tour';
-    column-gap: 20px;
+    grid-template-areas: 'first-w first-g treat constellation'
+                         'robot-tour shields o o';
+    column-gap: 10px;
     row-gap: 20px;
     width: 96vw;
     height: max-content;
