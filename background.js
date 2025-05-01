@@ -96,10 +96,6 @@ function animate() {
         currentColor = nextColor;
         nextColor = RandomColor(); // Pick either #0B090A or #E5383B
     }
-
-
-    
-    
 }
 window.addEventListener('resize', () => {
     ctx.width = window.innerWidth;
