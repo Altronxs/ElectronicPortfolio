@@ -8,13 +8,14 @@ body {
 }
 #project-container {
     display: grid;
-    grid-template-areas: 'first-g a treat treat'
-                         'b first-w treat treat'
+    grid-template-areas: 'first-w a treat treat'
+                         'constellation first-g treat treat'
                          'caw caw caw-1 caw-2'
                          'caw caw caw-3 caw-4'
-                         'robot-tour constellation mondrian amd'
-                         'shields-1 shields-2 shields shields'
-                         'shields-3 shields-4 shields shields ';
+                         'shields shields shields-1 shields-2'
+                         'shields shields shields-3 shields-4'
+                         'mondrian penguin robot-tour robot-tour'
+                         'distance clock robot-tour robot-tour';
     column-gap: 10px;
     row-gap: 20px;
     width: 85vw;
@@ -37,8 +38,22 @@ body {
 	position: relative;
 	transition: all 250ms;
 	z-index: 2;
-	filter:  brightness(125%);
+	filter:  brightness(100%);
     aspect-ratio: 2/1;
+}
+.imgos {
+    display: block;
+    margin: auto auto;
+	width: 96%;
+    margin: 2%;
+	object-fit: cover;
+	object-position: 55%;
+	border-radius: 20px;
+	position: relative;
+	transition: all 250ms;
+	z-index: 2;
+	filter:  brightness(110%);
+    aspect-ratio: 5/4;
 }
 .project {
     justify-self: center;
@@ -55,8 +70,7 @@ body {
 }
 .project:hover {
     bottom: 1%;
-    box-shadow:  20px 20px 60px #d0cfcf,
-             -20px -20px 60px #ffffff;
+    box-shadow: 5px 5px #A4161A, 10px 10px #BA181B, 15px 15px #E5383B;
 }
 .project-inner-container {
     display: block;
