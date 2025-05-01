@@ -12,9 +12,9 @@ body {
                          'b first-w treat treat'
                          'caw caw caw-1 caw-2'
                          'caw caw caw-3 caw-4'
-                         'robot-tour constellation x y'
-                         'e mondrian shields shields'
-                         'amd g shields shields ';
+                         'robot-tour constellation mondrian amd'
+                         'shields-1 shields-2 shields shields'
+                         'shields-3 shields-4 shields shields ';
     column-gap: 10px;
     row-gap: 20px;
     width: 85vw;
