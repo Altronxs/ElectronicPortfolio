@@ -8,12 +8,16 @@ body {
 }
 #project-container {
     display: grid;
-    grid-template-areas: 'first-w first-g treat constellation'
-                         'robot-tour shields o o';
+    grid-template-areas: 'first-w first-g treat treat'
+                         'robot-tour constellation treat treat'
+                         'caw caw t mondrian'
+                         'caw caw amd o'
+                         'v v shields shields';
     column-gap: 10px;
     row-gap: 20px;
-    width: 96vw;
+    width: 80vw;
     height: max-content;
+    margin: 0px 10vw 0px 10vw;
     padding-bottom: 10vh;
     justify-content: center;
     background: #F5F3F4;
