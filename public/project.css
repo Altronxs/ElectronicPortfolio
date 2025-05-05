@@ -8,20 +8,20 @@ body {
 }
 #project-container {
     display: grid;
-    grid-template-areas: 'first-w a treat treat'
-                         'constellation first-g treat treat'
-                         'caw caw caw-1 caw-2'
-                         'caw caw caw-3 caw-4'
-                         'shields shields shields-1 shields-2'
-                         'shields shields shields-3 shields-4'
-                         'mondrian penguin robot-tour robot-tour'
-                         'distance clock robot-tour robot-tour';
+    grid-template-areas: 'treat treat first-w'
+                         'treat treat first-g'
+                         'constellation caw caw'
+                         'mondrian caw caw'
+                         'shields shields penguin'
+                         'shields shields distance'
+                         'clock robot-tour robot-tour'
+                         'a robot-tour robot-tour';
     column-gap: 10px;
     row-gap: 20px;
-    width: 85vw;
+    width: 60vw;
     height: max-content;
     margin: 0px 10vw 0px 10vw;
-    padding-bottom: 7.5vh;
+    padding-bottom: 50.5vh;
     justify-content: center;
     background: #F5F3F4;
     position: relative;
