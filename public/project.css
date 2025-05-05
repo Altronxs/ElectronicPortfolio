@@ -6,22 +6,27 @@ body {
     top: 7vh;
     box-shadow: 0px 1vh #A4161A, 0px 2vh #660708;
 }
+.project a div p {
+    text-decoration: none;
+    color: #161A1D;
+}
 #project-container {
     display: grid;
+    grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: auto;
     grid-template-areas: 'treat treat first-w'
                          'treat treat first-g'
                          'constellation caw caw'
-                         'mondrian caw caw'
-                         'shields shields penguin'
-                         'shields shields distance'
-                         'clock robot-tour robot-tour'
-                         'a robot-tour robot-tour';
+                         'photo caw caw'
+                         'robot-tour robot-tour penguin'
+                         'robot-tour robot-tour clock'
+                         'distance shields shields'
+                         'mondrian shields shields';
     column-gap: 10px;
     row-gap: 20px;
-    width: 60vw;
     height: max-content;
     margin: 0px 10vw 0px 10vw;
-    padding-bottom: 50.5vh;
+    padding-bottom: 10vh;
     justify-content: center;
     background: #F5F3F4;
     position: relative;
