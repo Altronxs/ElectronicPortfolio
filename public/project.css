@@ -5,6 +5,7 @@ body {
     position: relative;
     top: 7vh;
     box-shadow: 0px 1vh #A4161A, 0px 2vh #660708;
+    z-index: 2;
 }
 .project a div p {
     text-decoration: none;
@@ -14,23 +15,49 @@ body {
     display: grid;
     grid-template-columns: 25vw 25vw 25vw;
     grid-template-rows: auto;
-    grid-template-areas: 'treat treat first-w'
+    grid-template-areas: 'emms emms emms'
+                         'treat treat first-w'
                          'treat treat first-g'
                          'constellation caw caw'
                          'photo caw caw'
                          'robot-tour robot-tour penguin'
                          'robot-tour robot-tour clock'
-                         'distance shields shields'
-                         'mondrian shields shields';
-    column-gap: 10px;
-    row-gap: 20px;
+                         'genki shields shields'
+                         'mondrian shields shields'
+                         'heli heli distance'
+                         'heli heli a';
+    column-gap: 25px;
+    row-gap: 25px;
+    width: 100vw;
     height: max-content;
     margin: 0px 10vw 0px 10vw;
-    padding-bottom: 10vh;
+    padding-bottom: 14vh;
     justify-content: center;
-    background: #F5F3F4;
+    background: linear-gradient(145deg, #dddbdc, #ffffff);
     position: relative;
-    top: 14vh;
+    padding-top: 14vh;
+}
+.emms {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5f8e0676a02a58217aab8cc1/1603155576915-C2DZI4V3VL9FO0LDCCLW/EMMS+Logo+2016+Trace+DEEP+GREEN.png');
+    background-color: rgba(255, 255, 255, 0.96) !important;
+    background-blend-mode: lighten !important;
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: 95% 95%;
+}
+.whs {
+    background-image: url('https://www.waipahuhigh.org/shared/footer_logo.png');
+    background-color: rgba(255, 255, 255, 0.96) !important;
+    background-blend-mode: lighten !important;
+    background-repeat: no-repeat;
+    background-size: 60%;
+    background-position: 95% 95%;
+}
+.title-project {
+    height: 15vh;
+    background: #F5F3F4;
+    border-radius: 25px;
+    background-color: #FFFFFF;
 }
 .imgo {
     display: block;
@@ -67,15 +94,16 @@ body {
     bottom: 0%;
     aspect-ratio: 1/1;
     background-color: #FFFFFF;
-    width: 95%;
+    width: 100%;
     border-radius: 25px;
-    box-shadow:  0px 0px 0px #d0cfcf,
-             -0px -0px 0px #ffffff;
+    box-shadow:  20px 20px 60px #d9d9d9,
+             -20px -20px 60px #ffffff;
     transition: all 250ms;
 }
 .project:hover {
     bottom: 1%;
-    box-shadow: 5px 5px #A4161A, 10px 10px #BA181B, 15px 15px #E5383B;
+    box-shadow:  20px 20px 60px #9e9e9e,
+             -20px -20px 60px #ffffff;
 }
 .project-inner-container {
     display: block;
@@ -84,7 +112,7 @@ body {
     margin: 5%;
 }
 .project-inner-container h2 {
-    font-size: 3vh;
+    font-size: 4vh;
     color: #161A1D;
 }
 .project-inner-container h2 .dash {
@@ -93,4 +121,8 @@ body {
 #lang, #lang-container {
     position: relative;
     top: 9vh;
+}
+#heli a img {
+    object-fit: cover;
+    object-position: 50% 25%;
 }
