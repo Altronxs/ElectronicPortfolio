@@ -33,8 +33,13 @@ body {
     margin: 0px 10vw 0px 10vw;
     padding-bottom: 14vh;
     justify-content: center;
-    background: linear-gradient(145deg, #dddbdc, #ffffff);
-    position: relative;
+    
+    background: #FFFFFF;
+    background: -webkit-linear-gradient(145deg, rgba(255, 255, 255, 1) 22%, rgba(255, 255, 255, 1) 33%, rgba(245, 243, 244, 1) 29%, rgba(245, 243, 244, 1) 66%, rgba(211, 211, 211, 1) 66%);
+    background: -moz-linear-gradient(145deg, rgba(255, 255, 255, 1) 22%, rgba(255, 255, 255, 1) 33%, rgba(245, 243, 244, 1) 29%, rgba(245, 243, 244, 1) 66%, rgba(211, 211, 211, 1) 66%);
+    background: linear-gradient(145deg, rgba(255, 255, 255, 1) 22%, rgba(255, 255, 255, 1) 33%, rgba(245, 243, 244, 1) 29%, rgba(245, 243, 244, 1) 66%, rgba(211, 211, 211, 1) 66%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#FFFFFF", endColorstr="#D3D3D3", GradientType=0);
+
     padding-top: 14vh;
 }
 .emms {
@@ -118,11 +123,39 @@ body {
 .project-inner-container h2 .dash {
     color: #E5383B;
 }
-#lang, #lang-container {
-    position: relative;
-    top: 9vh;
-}
+
+
 #heli a img {
     object-fit: cover;
     object-position: 50% 25%;
+}
+
+#skills {
+    margin-top: 9vh;
+    background-color: #161A1D;
+}
+#skills h2 {
+	width: 100vw;
+	text-align: center;
+	margin: 1vw;
+}
+#skills-container {
+	background-color: #161A1D;
+	width: 100vw;
+	height: fit-content;
+	padding: 1vw;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+#skills-container img {
+	margin: 10px;
+	box-shadow: 5px 5px  #000000;
+	position: relative;
+	margin-bottom: 10px;
+	bottom: 0px;
+	transition: all 250ms;
+}
+#skills-container img:hover {
+	bottom: 5px;
 }
