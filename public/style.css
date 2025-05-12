@@ -312,42 +312,64 @@ a {
 
 #about {
 	width: 100vw;
-	padding: 10vh 0vh 40vh 0vh;
+	padding: 10vh 0vh 10vh 0vh;
 	height: fit-content;
 	background-color: #161A1D;
-	display: block;
 	border-top: solid 1px #ffffff;
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 25vh 25vh;
+    grid-template-rows: 35vh 35vh;
 	column-gap: 2.5vw;
     row-gap: 3vh;
 	grid-template-areas: 'img img about'
-						 'img img education';
+						 'img img education'
+						 'r3 r4 r5';
 	justify-content: center;
+}
+.about {
+	height: 30vh;
+	width: 23vw;
+	padding: 2.5vh 1vw 2.5vh 1vw;	
+}
+.about ul {
+	margin: 0%;
 }
 #about-l {
 	grid-area: img;
 	width: 53vw;
-	height: 53vh;
+	height: 73vh;
 	border-radius: 25px;
 }
 #about-l img {
 	object-fit: cover;
-	filter: blur(1%);
-	object-position: 50% 0%;
-	height: 53vh;
+	object-position: 50% 10%;
+	height: 73vh;
 	width: 53vw;
 	border-radius: 25px;
 }
-#about-r {
-	height: fit-content;
+#about-r {	
 	grid-area: about;
 }
 #about-r2 {
-	height: fit-content;
 	grid-area: education;
 }
+#about-r3 {
+	grid-area: r3;
+}
+#about-r4 {
+	grid-area: r4;
+}
+#about-r5 {
+	grid-area: r5;
+}
+#about-r5 img {
+	object-fit: cover;
+	object-position: 50% 50%;
+	height: 35vh;
+	width: 100%;
+	border-radius: 25px;
+}
+
 #lang {
 	background-color:  #A4161A;
 	width: 100vw;
