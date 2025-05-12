@@ -312,16 +312,41 @@ a {
 
 #about {
 	width: 100vw;
+	padding: 10vh 0vh 40vh 0vh;
 	height: fit-content;
 	background-color: #161A1D;
 	display: block;
 	border-top: solid 1px #ffffff;
+	display: grid;
+	grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 25vh 25vh;
+	column-gap: 2.5vw;
+    row-gap: 3vh;
+	grid-template-areas: 'img img about'
+						 'img img education';
+	justify-content: center;
 }
 #about-l {
-	height: 100%;
+	grid-area: img;
+	width: 53vw;
+	height: 53vh;
+	border-radius: 25px;
+}
+#about-l img {
+	object-fit: cover;
+	filter: blur(1%);
+	object-position: 50% 0%;
+	height: 53vh;
+	width: 53vw;
+	border-radius: 25px;
 }
 #about-r {
-	height: 100%;
+	height: fit-content;
+	grid-area: about;
+}
+#about-r2 {
+	height: fit-content;
+	grid-area: education;
 }
 #lang {
 	background-color:  #A4161A;
