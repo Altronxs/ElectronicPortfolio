@@ -318,7 +318,7 @@ a {
 	border-top: solid 1px #ffffff;
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 35vh 35vh;
+    grid-template-rows: 40vh 40vh;
 	column-gap: 2.5vw;
     row-gap: 3vh;
 	grid-template-areas: 'img img about'
@@ -327,9 +327,16 @@ a {
 	justify-content: center;
 }
 .about {
-	height: 30vh;
+	height: 35vh;
 	width: 23vw;
 	padding: 2.5vh 1vw 2.5vh 1vw;	
+}
+.about h2 {
+	font-size: 3vh;
+}
+.about p {
+	font-family: 1.5vh;
+	text-wrap: none;
 }
 .about ul {
 	margin: 0%;
@@ -343,7 +350,7 @@ a {
 #about-l img {
 	object-fit: cover;
 	object-position: 50% 10%;
-	height: 73vh;
+	height: 82.5vh;
 	width: 53vw;
 	border-radius: 25px;
 }
@@ -365,7 +372,7 @@ a {
 #about-r5 img {
 	object-fit: cover;
 	object-position: 50% 50%;
-	height: 35vh;
+	height: 40vh;
 	width: 100%;
 	border-radius: 25px;
 }
