@@ -100,8 +100,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const triggerPosition = window.innerHeight - (window.innerHeight * 0.08);
             if (window.scrollY > triggerPosition) {
                 navbar.classList.add("fixed");
+                document.getElementById('about').style.paddingTop = '18vh';
             } else {
                 navbar.classList.remove("fixed");
+                document.getElementById('about').style.paddingTop = '10vh';
             }
         }
     });

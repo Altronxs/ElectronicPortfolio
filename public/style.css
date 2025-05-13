@@ -360,6 +360,9 @@ a {
 #about-r2 {
 	grid-area: education;
 }
+#about-r2 h2 {
+	font-size: 4vh;
+}
 #about-r3 {
 	grid-area: r3;
 }
@@ -377,6 +380,11 @@ a {
 	border-radius: 25px;
 }
 
+.red-text {
+	background: linear-gradient(135deg,rgba(255, 255, 255, 1) 0%, rgb(255, 79, 79) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
 #lang {
 	background-color:  #A4161A;
 	width: 100vw;
@@ -496,9 +504,19 @@ hr {
 	padding: 2.5%;
 }
 #goal {
-	display: block;
-	background-color: #FFFFFF;
+	padding: 10vh 0vh 10vh 0vh;
+	background-color: #ffffff;
 	width: 100vw;
+	border-top: solid 1px #ffffff;
+	display: grid;
+	grid-template-columns: 25vw 25vw 25vw;
+    grid-template-rows: 40vh 40vh;
+	column-gap: 2.5vw;
+    row-gap: 3vh;
+	grid-template-areas: 'img img about'
+						 'img img education'
+						 'r3 r4 r5';
+	justify-content: center;
 }
 #resume {
 	display: block;
