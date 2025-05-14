@@ -322,8 +322,7 @@ a {
 	column-gap: 2.5vw;
     row-gap: 3vh;
 	grid-template-areas: 'img img about'
-						 'img img education'
-						 'r3 r4 r5';
+						 'img img education';
 	justify-content: center;
 }
 .about {
@@ -363,15 +362,7 @@ a {
 #about-r2 h2 {
 	font-size: 4vh;
 }
-#about-r3 {
-	grid-area: r3;
-}
-#about-r4 {
-	grid-area: r4;
-}
-#about-r5 {
-	grid-area: r5;
-}
+
 #about-r5 img {
 	object-fit: cover;
 	object-position: 50% 50%;
@@ -379,9 +370,25 @@ a {
 	width: 100%;
 	border-radius: 25px;
 }
-
+#about-badges {
+	padding: 10px 0px 0px 20px;
+}
+#about-badges img {
+	transition: all 250ms;
+	height: 3.5vh;
+	position: relative;
+	bottom: 0%;
+}
+#about-badges img:hover {
+	bottom: 5%;
+}
 .red-text {
 	background: linear-gradient(135deg,rgba(255, 255, 255, 1) 0%, rgb(255, 79, 79) 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.white p .red-text {
+	background: linear-gradient(135deg,#E5383B 0%, #BA181B 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -511,8 +518,14 @@ hr {
     grid-template-rows: 50vh 50vh;
 	column-gap: 2.5vw;
     row-gap: 3vh;
-	grid-template-areas: 'goal-1 goal-img goal-img';
+	grid-template-areas: 'goal-1 goal-img goal-img'
+						'img2 goal-2 goal-2 ';
 	justify-content: center;
+}
+.goal {
+	height: 45vh;
+	width: 23vw;
+	padding: 2.5vh 1vw 2.5vh 1vw;
 }
 #resume {
 	display: block;
@@ -523,9 +536,13 @@ hr {
 	border: solid 2px #E5383B;
 }
 #goal-1 {
-	grid: goal-1;
+	grid-area: goal-1;
 }
-#goal-img {
+#goal-2 {
+	grid-area: goal-2;
+	width: 51vw;
+}
+#goal-img-1 {
 	width: 53vw;
 	height: 50vh;
 	border-radius: 25px;
@@ -533,12 +550,28 @@ hr {
 	box-shadow:  10px 10px 20px #d5d3d4,
              -10px -10px 20px #ffffff;
 }
-#goal-img img {
+#goal-img-1 img {
 	width: 53vw;
 	height: 50vh;
 	object-fit: cover;
 	object-position: 75% 35%;
 	border-radius: 25px;
+}
+#goal-img-2 {
+	grid-area: img2;
+	
+	width: 25vw;
+	height: 50vh;
+	border-radius: 25px;
+	background: linear-gradient(145deg, #ffffff, #dddbdc);
+	box-shadow:  10px 10px 20px #d5d3d4,
+             -10px -10px 20px #ffffff;
+}
+#goal-img-2 img {
+	width: 25vw;
+	height: 50vh;
+	border-radius: 25px;
+	object-fit: cover;
 }
 #link-contact {
 	text-decoration: none;
