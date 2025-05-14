@@ -461,11 +461,9 @@ a {
 }
 .white {
 	border-radius: 25px;
-	border-radius: 25px;
-	background: rgba(255, 255, 255,0);
-	backdrop-filter: blur(2px);
-	box-shadow:  5px 5px 10px #c9c7c8,
-				 -5px -5px 10px #ffffff;
+	background: linear-gradient(145deg, #ffffff, #dddbdc);
+	box-shadow:  10px 10px 20px #d5d3d4,
+             -10px -10px 20px #ffffff;
 	color:#0B090A;
 }
 .transparent-white {
@@ -510,12 +508,10 @@ hr {
 	border-top: solid 1px #ffffff;
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 40vh 40vh;
+    grid-template-rows: 50vh 50vh;
 	column-gap: 2.5vw;
     row-gap: 3vh;
-	grid-template-areas: 'img img about'
-						 'img img education'
-						 'r3 r4 r5';
+	grid-template-areas: 'goal-1 goal-img goal-img';
 	justify-content: center;
 }
 #resume {
@@ -526,9 +522,23 @@ hr {
 .white hr {
 	border: solid 2px #E5383B;
 }
-#goal-r {
-	background-color: #FFFFFF;
-	height: fit-content;
+#goal-1 {
+	grid: goal-1;
+}
+#goal-img {
+	width: 53vw;
+	height: 50vh;
+	border-radius: 25px;
+	background: linear-gradient(145deg, #ffffff, #dddbdc);
+	box-shadow:  10px 10px 20px #d5d3d4,
+             -10px -10px 20px #ffffff;
+}
+#goal-img img {
+	width: 53vw;
+	height: 50vh;
+	object-fit: cover;
+	object-position: 75% 35%;
+	border-radius: 25px;
 }
 #link-contact {
 	text-decoration: none;
