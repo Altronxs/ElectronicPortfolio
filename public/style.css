@@ -318,7 +318,7 @@ a {
 	border-top: solid 1px #ffffff;
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 40vh 40vh;
+    grid-template-rows: auto auto;
 	column-gap: 2.5vw;
     row-gap: 3vh;
 	grid-template-areas: 'img img about'
@@ -326,7 +326,7 @@ a {
 	justify-content: center;
 }
 .about {
-	height: 35vh;
+	height: auto;
 	width: 23vw;
 	padding: 2.5vh 1vw 2.5vh 1vw;	
 }
@@ -335,7 +335,8 @@ a {
 }
 .about p {
 	font-family: 1.5vh;
-	text-wrap: none;
+	text-indent: 40px;
+
 }
 .about ul {
 	margin: 0%;
@@ -343,13 +344,13 @@ a {
 #about-l {
 	grid-area: img;
 	width: 53vw;
-	height: 73vh;
+	height: 100%;
 	border-radius: 25px;
 }
 #about-l img {
 	object-fit: cover;
 	object-position: 50% 10%;
-	height: 82.5vh;
+	height: 100%;
 	width: 53vw;
 	border-radius: 25px;
 }
@@ -388,7 +389,7 @@ a {
 	-webkit-text-fill-color: transparent;
 }
 .white p .red-text {
-	background: linear-gradient(135deg,#E5383B 0%, #BA181B 100%);
+	background: linear-gradient(135deg,#cb3639 0%, #a80003 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -468,7 +469,7 @@ a {
 }
 .white {
 	border-radius: 25px;
-	background: linear-gradient(145deg, #ffffff, #dddbdc);
+	background: #F5F3F4;
 	box-shadow:  10px 10px 20px #d5d3d4,
              -10px -10px 20px #ffffff;
 	color:#0B090A;
@@ -504,9 +505,13 @@ hr {
 #statement {
 	width: 100vw;
 	height: fit-content;
-	background-color:  #BA181B;
+	
+	background: linear-gradient(151deg,rgba(186, 24, 27, 1) 33%, rgba(164, 22, 26, 1) 3%, rgba(164, 22, 26, 1) 66%, rgba(145, 13, 15, 1) 66%);
 	display: block;
 	padding: 2.5%;
+}
+#statement div p {
+	font-size: 3vh;
 }
 #goal {
 	padding: 10vh 0vh 10vh 0vh;
@@ -515,7 +520,7 @@ hr {
 	border-top: solid 1px #ffffff;
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: 50vh 50vh;
+    grid-template-rows: auto auto;
 	column-gap: 2.5vw;
     row-gap: 3vh;
 	grid-template-areas: 'goal-1 goal-img goal-img'
@@ -523,7 +528,7 @@ hr {
 	justify-content: center;
 }
 .goal {
-	height: 45vh;
+	height: auto;
 	width: 23vw;
 	padding: 2.5vh 1vw 2.5vh 1vw;
 }
@@ -537,14 +542,20 @@ hr {
 }
 #goal-1 {
 	grid-area: goal-1;
+	height: auto;
+}
+#goal-1 p {
+	padding-top: 20px;
+	text-indent: 40px;
 }
 #goal-2 {
 	grid-area: goal-2;
+	height: 40vh;
 	width: 51vw;
 }
 #goal-img-1 {
 	width: 53vw;
-	height: 50vh;
+	height: 100%;
 	border-radius: 25px;
 	background: linear-gradient(145deg, #ffffff, #dddbdc);
 	box-shadow:  10px 10px 20px #d5d3d4,
@@ -552,7 +563,7 @@ hr {
 }
 #goal-img-1 img {
 	width: 53vw;
-	height: 50vh;
+	height: 100%;
 	object-fit: cover;
 	object-position: 75% 35%;
 	border-radius: 25px;
@@ -561,15 +572,14 @@ hr {
 	grid-area: img2;
 	
 	width: 25vw;
-	height: 50vh;
-	border-radius: 25px;
+	height: 45vh;
 	background: linear-gradient(145deg, #ffffff, #dddbdc);
 	box-shadow:  10px 10px 20px #d5d3d4,
              -10px -10px 20px #ffffff;
 }
 #goal-img-2 img {
 	width: 25vw;
-	height: 50vh;
+	height: 45vh;
 	border-radius: 25px;
 	object-fit: cover;
 }
