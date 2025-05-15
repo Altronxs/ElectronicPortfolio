@@ -524,25 +524,22 @@ hr {
 	column-gap: 2.5vw;
     row-gap: 3vh;
 	grid-template-areas: 'goal-1 goal-img goal-img'
-						'img2 goal-2 goal-2 ';
+						'img2 goal-2 goal-2 '
+						'resume img3 img3';
 	justify-content: center;
 }
 .goal {
-	height: auto;
+	min-height: 30vh;
+	max-height: 70vh;
 	width: 23vw;
 	padding: 2.5vh 1vw 2.5vh 1vw;
-}
-#resume {
-	display: block;
-	background-color: #D3D3D3;
-	width: 100vw;
 }
 .white hr {
 	border: solid 2px #E5383B;
 }
 #goal-1 {
 	grid-area: goal-1;
-	height: auto;
+
 }
 #goal-1 p {
 	padding-top: 20px;
@@ -550,12 +547,13 @@ hr {
 }
 #goal-2 {
 	grid-area: goal-2;
-	height: 40vh;
+
 	width: 51vw;
 }
 #goal-img-1 {
 	width: 53vw;
-	height: 100%;
+	min-height: 35vh;
+	max-height: 75vh;
 	border-radius: 25px;
 	background: linear-gradient(145deg, #ffffff, #dddbdc);
 	box-shadow:  10px 10px 20px #d5d3d4,
@@ -568,20 +566,33 @@ hr {
 	object-position: 75% 35%;
 	border-radius: 25px;
 }
-#goal-img-2 {
-	grid-area: img2;
-	
-	width: 25vw;
-	height: 45vh;
+#goal-img-3 {
+	grid-area: img3;
+	width: 53vw;
+	min-height: 35vh;
+	max-height: 45vh;
 	background: linear-gradient(145deg, #ffffff, #dddbdc);
 	box-shadow:  10px 10px 20px #d5d3d4,
              -10px -10px 20px #ffffff;
 }
-#goal-img-2 img {
+#goal-img-2 {
+	grid-area: img2;
+	
 	width: 25vw;
-	height: 45vh;
+	min-height: 35vh;
+	max-height: 45vh;
+	background: linear-gradient(145deg, #ffffff, #dddbdc);
+	box-shadow:  10px 10px 20px #d5d3d4,
+             -10px -10px 20px #ffffff;
+}
+#goal-img-2 img, #goal-img-3 img {
+	width: 100%;
+	height: 100%;
 	border-radius: 25px;
 	object-fit: cover;
+}
+#resume {
+	grid-area: resume;
 }
 #link-contact {
 	text-decoration: none;
@@ -728,34 +739,5 @@ hr {
 .title h3:hover {
 	bottom: 0.5vh;
 }
-#timeline {
-	display: grid;
-	width: 100vw;
-	grid-template-columns: 1fr;
-	grid-template-areas: 'nine'
-						 'first'
-						 'two'
-						 'twenty'
-						 'twenty-one-text'
-						 'twenty-one'
-						 'twenty-two-text'
-						 'twenty-two';
-	background-color: #f5f3f4;
-}
-.date {
-	justify-self: center;
-	width: fit-content;
-	height: fit-content;
-	color: #0B090A;
-	font-size: 5.5vh;
-	text-align: center;
-	margin: 0%;
-	margin-top: 2vh;
-	margin-bottom: 3vh;
-	padding: 10px;
-	background-color: #f5f3f400;
-}
-#nineteen {
-	grid-area: first;
-}
+
 
