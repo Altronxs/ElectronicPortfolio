@@ -515,45 +515,46 @@ hr {
 }
 #goal {
 	padding: 10vh 0vh 10vh 0vh;
-	background-color: #ffffff;
+	background:  linear-gradient(158deg,rgba(255, 255, 255, 1) 33%, rgba(245, 243, 244, 1) 33%, rgba(245, 243, 244, 1) 66%, rgba(211, 211, 211, 1) 66%, rgba(211, 211, 211, 1) 90%);
 	width: 100vw;
 	border-top: solid 1px #ffffff;
 	display: grid;
 	grid-template-columns: 25vw 25vw 25vw;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto minmax(35vh, 50vh) auto;
 	column-gap: 2.5vw;
     row-gap: 3vh;
 	grid-template-areas: 'goal-1 goal-img goal-img'
 						'img2 goal-2 goal-2 '
-						'resume img3 img3';
+						'resume . .';
 	justify-content: center;
+	
 }
 .goal {
-	min-height: 30vh;
-	max-height: 70vh;
+	height: auto;
 	width: 23vw;
 	padding: 2.5vh 1vw 2.5vh 1vw;
+}
+.goal p {
+	text-indent: 40px;
 }
 .white hr {
 	border: solid 2px #E5383B;
 }
 #goal-1 {
 	grid-area: goal-1;
+	
+	
+}
 
-}
-#goal-1 p {
-	padding-top: 20px;
-	text-indent: 40px;
-}
 #goal-2 {
 	grid-area: goal-2;
-
 	width: 51vw;
 }
 #goal-img-1 {
+	grid-area: goal-img;
 	width: 53vw;
-	min-height: 35vh;
-	max-height: 75vh;
+	height: 100%;
+	display: block;
 	border-radius: 25px;
 	background: linear-gradient(145deg, #ffffff, #dddbdc);
 	box-shadow:  10px 10px 20px #d5d3d4,
@@ -566,21 +567,11 @@ hr {
 	object-position: 75% 35%;
 	border-radius: 25px;
 }
-#goal-img-3 {
-	grid-area: img3;
-	width: 53vw;
-	min-height: 35vh;
-	max-height: 45vh;
-	background: linear-gradient(145deg, #ffffff, #dddbdc);
-	box-shadow:  10px 10px 20px #d5d3d4,
-             -10px -10px 20px #ffffff;
-}
 #goal-img-2 {
 	grid-area: img2;
 	
 	width: 25vw;
-	min-height: 35vh;
-	max-height: 45vh;
+	height: 100%;
 	background: linear-gradient(145deg, #ffffff, #dddbdc);
 	box-shadow:  10px 10px 20px #d5d3d4,
              -10px -10px 20px #ffffff;
@@ -590,13 +581,6 @@ hr {
 	height: 100%;
 	border-radius: 25px;
 	object-fit: cover;
-}
-#goal-img-3 img {
-	width: 100%;
-	height: 100%;
-	border-radius: 25px;
-	object-fit: cover;
-	object-position: 50% 25%;
 }
 #resume {
 	grid-area: resume;
