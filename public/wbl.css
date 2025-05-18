@@ -1,0 +1,88 @@
+#experiences-container {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: auto;
+    grid-template-areas:
+                         'congressional25 congressional25 heli'
+                         'congressional25 congressional25 .';
+    column-gap: 25px;
+    row-gap: 25px;
+    width: 100vw;
+    height: max-content;
+    margin: 0px 10vw 0px 10vw;
+    padding-bottom: 14vh;
+    justify-content: center;
+    
+    background: #161A1D;
+    background: linear-gradient(170deg, rgba(22, 26, 29, 1) 15%, rgba(206, 212, 218, 1) 15%, rgba(206, 212, 218, 1) 43%, rgba(222, 226, 230, 1) 43%, rgba(222, 226, 230, 1) 71%, rgba(233, 236, 239, 1) 71%);
+    padding-top: 15vh;
+}
+#experiences {
+    position: relative;
+    top: 7vh;
+    box-shadow: 0px 1vh #A4161A, 0px 2vh #660708;
+    z-index: 2;
+    width: 100vw;
+}
+#projects {
+    position: relative;
+    box-shadow: 0px 1vh #A4161A, 0px 2vh #660708;
+    z-index: 2;
+    width: 100vw;
+}
+.project {
+    justify-self: center;
+    position: relative;
+    transition: all 250ms;
+    bottom: 0%;
+    aspect-ratio: 1/1;
+    background-color: #FFFFFF;
+    width: 100%;
+    border-radius: 25px;
+    transition: all 250ms;
+}
+.project:hover {
+    bottom: 1%;
+}
+.project-inner-container {
+    display: block;
+    margin: auto auto;
+	width: 90%;
+    margin: 5%;
+}
+.project-inner-container h2 {
+    font-size: 3.5vh;
+    color: #161A1D;
+}
+.project-inner-container h2 .dash {
+    color: #E5383B;
+}
+
+.imgo {
+    display: block;
+    margin: auto auto;
+	width: 96%;
+    margin: 2%;
+	object-fit: cover;
+	object-position: 55%;
+	border-radius: 20px;
+	position: relative;
+	transition: all 250ms;
+	z-index: 2;
+	filter:  brightness(100%);
+    aspect-ratio: 2/1;
+}
+.imgos {
+    display: block;
+    margin: auto auto;
+	width: 96%;
+    margin: 2%;
+	object-fit: cover;
+	object-position: 55%;
+	border-radius: 20px;
+	position: relative;
+	transition: all 250ms;
+	z-index: 2;
+	filter:  brightness(110%);
+    aspect-ratio: 5/4;
+}
