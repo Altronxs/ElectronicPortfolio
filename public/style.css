@@ -547,7 +547,7 @@ hr {
 #goal-2 {
 	grid-area: goal-2;
 	width: 51vw;
-	height: 45vh !important;
+	height: 50vh !important;
 	overflow: auto; 
 }
 #goal-img-1 {
@@ -569,7 +569,7 @@ hr {
 }
 #goal-img-2 {
 	grid-area: img2;
-	height: 50vh !important;
+	height: 55vh !important;
 	width: 25vw;
 	background: linear-gradient(145deg, #ffffff, #dddbdc);
 	box-shadow:  10px 10px 20px #d5d3d4,
