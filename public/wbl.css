@@ -178,3 +178,27 @@
     background: linear-gradient(172deg, rgba(22, 26, 29, 1) 15%, rgba(206, 212, 218, 1) 15%, rgba(206, 212, 218, 1) 43%, rgba(222, 226, 230, 1) 43%, rgba(222, 226, 230, 1) 71%, rgba(233, 236, 239, 1) 71%);
     padding-top: 10vh;
 }
+#certifications {
+    z-index: 3;
+    box-shadow: 0px 0vh 0vh 1vh #A4161A, 0px 0vh 0vh 2vh #660708;
+}
+#certifications-container {
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw;
+    grid-template-rows: auto;
+    grid-template-areas: '';
+    column-gap: 25px;
+    row-gap: 25px;
+    width: 100vw;
+    height: max-content;
+    margin: 0px 10vw 0px 10vw;
+    padding-bottom: 14vh;
+    justify-content: center;
+    grid-template-areas: 'c-1 c-1 c-2'
+                        'c-1 c-1 c-3'
+                        'c-5 c-4 c-4' 
+                         'c-6 c-4 c-4';
+    background: #161A1D;
+    background: linear-gradient(172deg, rgba(22, 26, 29, 1) 15%, rgba(206, 212, 218, 1) 15%, rgba(206, 212, 218, 1) 43%, rgba(222, 226, 230, 1) 43%, rgba(222, 226, 230, 1) 71%, rgba(233, 236, 239, 1) 71%);
+    padding-top: 10vh;
+}
