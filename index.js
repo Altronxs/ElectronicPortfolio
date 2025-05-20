@@ -5,12 +5,15 @@ window.onload = function () {
     var count = 0;
     updateRole();
 
+    const name = document.getElementById('name');
+
     function updateRole() {
         roles.innerText = "";
         count = 0;
         random = Math.floor(Math.random() * myroles.length);
         typeEffect();
     }
+
 
     function typeEffect() {
         if (count == 0) {
