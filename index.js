@@ -6,10 +6,16 @@ window.onload = function () {
     var countName = 0;
     var nameid = 0;
     var nameText = ["Kyle Alexander Baldovi", "AltronX", "AlexTronX", "AlternateTronX"];
+    var nameText = ["Kyle Alexander Baldovi", "AltronX", "AlexTronX", "AlternateTronX"];
     const name = document.getElementById('name');
     updateRole();
 
     function changeName()  {
+        name.innerText = "";
+        countName = 0;
+        nameEffect();
+    }
+
         name.innerText = "";
         countName = 0;
         nameEffect();
@@ -24,13 +30,19 @@ window.onload = function () {
         } else {
             if (nameid == 1) {
                 nameid = 2;
+                nameid = 2;
             } else if (nameid == 0) {
                 nameid = 1;
             } else if (nameid == 2) {
                 nameid = 3;
             } else if (nameid == 3) {
                 nameid = 0;
+            } else if (nameid == 2) {
+                nameid = 3;
+            } else if (nameid == 3) {
+                nameid = 0;
             }
+        
         
         }
     }
