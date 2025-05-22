@@ -29,7 +29,6 @@ window.onload = function () {
         } else {
             if (nameid == 1) {
                 nameid = 2;
-                nameid = 2;
             } else if (nameid == 0) {
                 nameid = 1;
             } else if (nameid == 2) {
