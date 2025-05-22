@@ -15,11 +15,6 @@ window.onload = function () {
         nameEffect();
     }
 
-        name.innerText = "";
-        countName = 0;
-        nameEffect();
-    }
-
     changeName();
     function nameEffect() {
         if (countName < nameText[nameid].length) {
@@ -28,6 +23,7 @@ window.onload = function () {
             setTimeout(nameEffect, 100); // Corrected function reference
         } else {
             if (nameid == 1) {
+                nameid = 2;
                 nameid = 2;
             } else if (nameid == 0) {
                 nameid = 1;
