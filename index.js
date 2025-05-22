@@ -6,7 +6,6 @@ window.onload = function () {
     var countName = 0;
     var nameid = 0;
     var nameText = ["Kyle Alexander Baldovi", "AltronX", "AlexTronX", "AlternateTronX"];
-    var nameText = ["Kyle Alexander Baldovi", "AltronX", "AlexTronX", "AlternateTronX"];
     const name = document.getElementById('name');
     updateRole();
 
