@@ -8,6 +8,7 @@ window.onload = function () {
     var nameText = ["Kyle Alexander Baldovi", "AltronX"];
     const name = document.getElementById('name');
     updateRole();
+    changeName();
 
     function changeName()  {
         if (nameid == 1) {
@@ -21,7 +22,6 @@ window.onload = function () {
             nameEffect();
         }
     }
-    changeName();
     function nameEffect() {
         if (countName < nameText[nameid].length) {
             name.innerText = name.innerHTML + nameText[nameid].charAt(countName);
@@ -35,17 +35,12 @@ window.onload = function () {
             }
         }
     }
-
-
-
     function updateRole() {
         roles.innerText = "";
         count = 0;
         random = Math.floor(Math.random() * myroles.length);
         typeEffect();
     }
-
-
     function typeEffect() {
         if (count == 0) {
             roles.innerText = myroles[random].charAt(0);
