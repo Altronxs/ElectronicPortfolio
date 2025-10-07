@@ -7,144 +7,94 @@
 
 	<!--CSS LINK-->
 	<link rel="stylesheet" type="text/css" href="./public/style.css">
+	<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 	<!--Favicon-->
-	<link rel="icon" type="image/x-icon" href="./public/pictures/favicon.ico">
+	<!-- <link rel="icon" type="image/x-icon" href="./public/pictures/favicon.ico"> -->
 
 	<!--Outfit Font-->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Italiana&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
 
 	<script src="./index.js"></script>
 	<script src="./navbar.js"></script>
 </head>
 	<body>
 		<!--I am front page-->
-		<div id="iam">
-			<div class="lcoltt">
-				<div class="boxl white" id="front" style="margin-top: 21%;">
-					<h1><strong class="dash">// </strong><i id="name"></i></h1>
-					<h2 id="iaminput">I am a <strong id="roles">Full Stack Developer</strong></h2>
-					<p>Current Waipahu High School Junior<br>of the Immortal Lions Class of 2026</p>
+		<div>
+			<img 
+				src="./public/pictures/IMG_9702.jpg"
+				class="
+				absolute
+				bg-gray-900
+				z-0
+				object-cover
+				w-[100vw]
+				h-[100vh]
+				brightness-[50%]
+				"
+				id="front-page"
+			>
+			<div 
+				class="
+				bg-[linear-gradient(160deg,rgba(155,42,42,0)_0%,rgba(155,42,42,0)_44.5%,rgba(0,0,0,1)_45%,rgba(0,0,0,1)_100%)] 
+				h-[100vh] 
+				w-[100vw]
+				z-0
+				relative
+				grid
+				grid-cols-2 
+				grid-rows-3
+				grid-flow-col
+				gap-10
+				"
+			>
+				<h1 
+					class="
+					italiana
+					font-extrabold
+					text-7xl/[1]
+					text-white
+					ml-30
+					pt-25
+					"
+				>
+					Kyle<br>Alexander<br>Alfaro<br>Baldovi
+				</h1>
+				<div
+					class="
+					ml-30
+					pt-45
+					flex
+					flex-row
+					gap-20
+					flex-nowrap
+					"
+				>
+					<a href="https://www.instagram.com/kylealtxyz/" class="bottom-0 hover:bottom-2 relative transition-all duration-150"><img src="./public/pictures/instagram-logo.png" class="size-10 "></a>
+					<a href="https://github.com/Altronxs" class="bottom-0 hover:bottom-2 relative transition-all duration-150"><img src="./public/pictures/github-logo.png" class="size-10"></a>
+					<a href="kyleboy1010@gmail.com" class="bottom-0 hover:bottom-2 relative transition-all duration-150"><img src="./public/pictures/mail-logo.png" class="size-10"></a>
 				</div>
-			</div>
-			<div class="rcoltt">
-				<div>
-					<img src="./public/pictures/IMG_9692.jpg" id="profile">
+				<div
+					class="
+					ml-30
+					pt-20
+					"
+				>
+					<h2 id="iaminput" class="text-2xl text-nowrap">I am a <strong id="roles" class="italiana font-bold">Full Stack Developer</strong></h2>
+					<p class="text-2xl text-nowrap">Current Waipahu High School Senior<br>of the Immortal Lions Class of 2026</p>
+				</div>
+				
+				<div >
+					<div>
+						<!-- <img src="./public/pictures/IMG_9692.jpg" > -->
+					</div>
 				</div>
 			</div>
 		</div>
-		<canvas id="iam-background"></canvas>
-		<script src="./background.js"></script>
-		<!--Header-->
-		<div id="navbar">
-			<header id="header">
-				<a href="./index.html"><h1>Kyle Alexander Baldovi</h1></a>
-				<button style="margin-right: 20px;" onclick="redirect('./gallary.html')">Gallery</button>
-				<button id="ext" onclick="redirect('./extracuricular.html')">Extracuriculars</button>
-				<button id="wblt" onclick="redirect('./wbl.html')">WBL</button>
-				<button id="home" onclick="redirect('./project.html')">Projects</button>
-				<button id="home" onclick="redirect('./index.html')">Home</button>
-			</header>
-			<div id="dropdown">
-				<div id="wbl">
-					<a class="wbltt" href="./project.html">Projects</a>
-					<a class="wbltt" href="./wbl.html#certifications">Certifications</a>
-					<a class="wbltt" href="./wbl.html#awards" >Awards</a>
-					<a class="wbltt" href="./wbl.html#experiences" >Experiences</a>
-				</div>
-				<div id="extra">
-					<a class="extt" href="./extracuricular.html#hobbies">Hobbies</a>
-					<a class="extt" href="./extracuricular.html#community">Community Service</a>
-					<a class="extt" href="./extracuricular.html#clubs">Clubs</a>
-					<a class="extt" href="./extracuricular.html#leadership">Leadership</a>
-				</div>
-			</div>
-		</div>
-        <!--Header-End-->
-		<div id="about">
-			<a id="about-l"><img class="gray" src="./public/pictures/DSCF5488.JPG"></a>
-			<div id="about-r" class="box gray about">
-				<h2><strong class="dash">// </strong>About Me</h2>
-				<hr>
-				<p>My name is <strong>Kyle Alexander Baldovi</strong>, and I am currently a Cybersecurity student at <strong>Waipahu High School</strong>. I was born and raised in <strong>Ewa Beach, Hawaii</strong>, which has shaped me into the person I am today – someone who is <strong class="red-text"><i>ambitious</i></strong>, <strong class="red-text"><i>curious</i></strong>, and <strong class="red-text"><i>creative</i></strong>.</p>
-			</div>
-			<div id="about-r2" class="box gray about">
-				<h2><strong class="dash">// </strong><strong class="red-text">6 Years of Experience</strong></h2>
-				<hr>
-				<div id="about-badges">
-					<img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white" loading="lazy">
-					<img src="https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white" loading="lazy">
-					<img src="https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E" loading="lazy"> 
-					<img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white" loading="lazy">
-					<img src="https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white" loading="lazy">
-					<img src="https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white" loading="lazy">
-					<img src="https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white">
-					<img src="https://img.shields.io/badge/-Raspberry_Pi-C51A4A?style=for-the-badge&logo=Raspberry-Pi" loading="lazy">
-					<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" loading="lazy">
-					<img src="https://img.shields.io/badge/cisco-%23049fd9.svg?style=for-the-badge&logo=cisco&logoColor=black" loading="lazy">
-					<img src="https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white" loading="lazy">
-				</div>
-			</div>
-			
-		</div>
-		<div id="statement">
-			<div class="center center-text box transparent-black">
-				<h2><strong class="dash" style="color: #F5F3F4 !important;">// </strong>Personal Statement</h2>
-				<hr class="center" style="margin: auto auto; border-color: #F5F3F4">
-				<p>I've realized for a while now that I don't enjoy <b>programming</b> itself,<br> but rather I love <b>solving problems</b> and <i>designing creative, new ways</i> to approach them.</p>
-			</div>
-		</div>
-		<div id="goal">
-			<div id="goal-1" class="box white goal">
-				<h2><strong class="dash">// </strong>My Objective</h2>
-				<hr>
-				<p>With my background in both <strong>hardware</strong> and <strong>software</strong>—two areas I genuinely enjoy working with, whether through academic projects, personal experiments, or hands-on hobbies—I am deeply motivated to pursue a degree in <strong class="red-text">Computer Engineering</strong>. My career objective is to blend my technical knowledge and creative problem-solving skills to develop innovative solutions. I aspire to contribute to cutting-edge technological advancements, continuously learn in this ever-evolving field, and make a meaningful impact in the tech industry.</p>
+		
+		
+		
 
-			</div>
-			<a id="goal-img-1"><img src="./public/pictures/goal-1.jpg" loading="lazy"></a>
-			<a id="goal-img-2"><img src="./public/pictures/IMG_9588.JPG" loading="lazy"></a>
-			<div id="goal-2" class="box white goal">
-				<h2><strong class="dash">// </strong>My Goals</h2>
-				<hr>
-				<p>
-					<strong>My objective</strong> is to become a proficient computer engineer who can use my love of technology to solve challenging issues and innovate. <em>My goal</em> is to obtain a bachelor's and master's degree in computer engineering, preferably from one of the following universities: the University of Hawai'i at Mānoa, Arizona State University, Seattle University, or the University of Washington Tacoma. <strong>These courses</strong> will give students the rigorous technical foundation and real-world experience they need to thrive in the quickly evolving tech industry. In areas such as <em>software development</em>, <em>embedded systems</em>, and <em>artificial intelligence</em>, I hope to drive innovation, work on significant projects, and contribute to cutting-edge technological advancements. <strong>I'm determined</strong> to acquire the leadership, problem-solving, and critical thinking abilities required to contribute significantly to the technology sector.
-				</p>
-			</div>
-			<div id="resume" class="box white goal">
-				<h2><strong class="dash">// </strong>My Resume</h2>
-				<hr>
-				<p>Here is my resume that shows a brief history of my Experience, Skills, Education, and Awards.</p>
-				<a style="text-indent: 40px; padding-top: 10px;text-decoration: none;color: #161A1D;" href="./public/files/Baldovi, Kyle Alexander - Resume.pdf"><p><strong class="dash">>> </strong><strong><i>Resume</i></strong></p></a>
-			</div>
-			
-		</div>
-		<div id="lang-container">
-			<div class="footer-info">
-				<h2 class="transparent-black"><strong class="dash">// </strong>Kyle Alexander Baldovi</h2>
-				<p>94-1211 Farrington Hwy<br>Waipahu HI 96797</p>
-			</div>
-			<div class="footer-info" id="footer-nav">
-				<a href="./index.html"><p>WELCOME</p></a>
-				<a href=""><p>WBL</p></a>
-				<a href="./project.html"><p>PROJECTS</p></a>
-				<a href="./extracuricular.html"><p>EXTRACURICULARS</p></a>
-			</div>
-			<div class="footer-info" id="footer-contact">
-				<p><strong>Contact Me</strong></p>
-				<p>Gmail:  kylextron101098@gmail.com</p>
-				<p>or kyleboy1010@gmail.com</p>
-				<p>Discord: .altronx</p>
-			</div>
-			<div class="footer-info" id="footer-follow">
-				<p><strong>Follow Me</strong></p>
-				<div id="four-grid">
-					<a href="https://github.com/Altronxs" target="_blank" id="link-contact"><img src="https://img.shields.io/badge/GitHub-%23121011.svg?logo=github&logoColor=white"><p>@Altronxs</p></a>
-					<a id="link-contact"><img src="https://img.shields.io/badge/Discord-%235865F2.svg?&logo=discord&logoColor=white"><p>.altronx</p></a>
-					<a href="https://www.instagram.com/kylealtxyz/" target="_blank" id="link-contact"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white"><p>@kylealtxyz</p></a>
-					<a href="https://www.facebook.com/profile.php?id=100084845784225" target="_blank" id="link-contact"><img src="https://img.shields.io/badge/Facebook-%231877F2.svg?logo=Facebook&logoColor=white"><p>Kyle Alex</p></a>
-				</div>
-			</div>
-		</div>
 	</body>
 </html>
