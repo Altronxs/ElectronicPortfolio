@@ -1,6 +1,6 @@
 window.onload = function () {
     const roles = document.getElementById("roles");
-    const myroles = ["Full Stack Developer", "Immortal Lion Council Member", "Immortal Lion", "Leader", "Marauder", "Scirauder", "Photographer"];
+    const myroles = ["Full Stack Developer", "Immortal Lion Council Member", "Immortal Lion", "Leader", "Marauder", "Photographer"];
     var random;
     var count = 0;
     var countName = 0;
