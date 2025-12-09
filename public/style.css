@@ -1,5 +1,6 @@
 body {
   color: white;
+  overflow-x: hidden;
 }
 .italiana {
   font-family: "Italiana", sans-serif;
