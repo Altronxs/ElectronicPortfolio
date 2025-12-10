@@ -13,7 +13,10 @@ body {
 #front-page {
   object-position: 0% 40%;
 }
-
+#programmingSince {
+  background-image: url('./pictures/DSC06384.JPG');
+  background-size: cover;
+}
 /* @media only screen and (max-width: 768px) {
   #front-page {
     object-position: 10% 80%;
