@@ -21,17 +21,17 @@
 </head>
 	<body>
 		<!--I am front page-->
-		<div>
+		<div class="snap-center h-screen w-screen bg-black">
 			<img 
 				src="./public/pictures/IMG_9702.jpg"
 				class="
 				absolute
 				bg-gray-900
-				z-0
 				object-cover
 				w-[100vw]
 				h-[100vh]
 				brightness-[50%]
+				z-0
 				"
 				id="front-page"
 			>
@@ -109,17 +109,21 @@
 		</div>
 		<div class="
 			w-[100vw] 
-			h-[90vh] 
+			h-[100vh] 
 			bg-black
 			grid
 			grid-cols-2 
 			grid-rows-1
 			grid-flow-col
 			gap-10
-			m-auto"
+			m-auto
+			z-10
+			inset-0
+			relative
+			snap-center"
 
 		>
-			<div class="mt-[25%]">
+			<div class="mt-[30%]">
 				<h1 
 					class="
 					italiana
@@ -133,21 +137,24 @@
 					"
 				>
 					About Me
-					<hr class="w-[7vw] mt-5 mb-5">
+					<hr class="w-[7vw] mt-5 mb-5 border-red-500 border-[2px]">
 				</h1>
-				<p class=" text-2xl text-white w-[45vw] ml-30 mt-10">My name is Kyle Alexander Baldovi, and I am currently a Cybersecurity student at Waipahu High School. I was born and raised in Ewa Beach, Hawaii, which has shaped me into the person I am today – someone who is ambitious, curious, and creative.</p>
+				<p class=" text-2xl text-white w-[45vw] ml-30 mt-5">My name is Kyle Alexander Baldovi, and I am currently a Cybersecurity student at Waipahu High School. I was born and raised in Ewa Beach, Hawaii, which has shaped me into the person I am today – someone who is ambitious, curious, and creative.</p>
 			</div>
 			<img
 				src="./public\pictures\IMG_9692.jpg"
-				class="w-[30vw] h-[30vw] relative top-20 z-40 object-cover grayscale  ml-30"
+				class="w-[30vw] h-[30vw] relative top-20 z-40 object-cover grayscale-[40%] rounded-xl ml-30"
 			>
 		</div>
 		<div class="
 			w-[100vw] 
-			h-[90vh] 
+			h-[100vh] 
 			bg-black
 			block
-			m-auto"
+			m-auto
+			snap-center
+			relative
+			z-10"
 			id="programmingSince"
 
 		>
@@ -155,17 +162,18 @@
 				src="./public\pictures\DSC06384.JPG"
 				class="w-[35vw] h-[25vw] mt-32 z-40 object-cover brightness-75 ml-30"
 			> -->
-			<div class="block m-auto w-fit relative top-[20%]">
+			<div class="block m-auto w-[100vw] h-[100vh] backdrop-blur-md">
 				<h1 
 					class="
 					italiana
 					font-extrabold
 					text-6xl/[1]
 					text-white
-					
+					m-auto
 					w-[50vw]
 					h-[10vh]
 					relative
+					top-[20%]
 					"
 				>
 					Programming Since 2019
@@ -178,12 +186,15 @@
 					gap-5
 					p-5
 					w-fit
-					h-fit"
+					h-fit
+					m-auto
+					relative
+					top-[20%]"
 				>
-					<div class="bg-gray-500/10 w-[25vw] p-5 rounded h-min backdrop-blur-xl">
-						<h3 class="italiana font-extrabold text-2xl">HTML/CSS</h3>
+					<div class="bg-black/35 w-[25vw] p-5 rounded-lg h-min backdrop-blur-3xl">
+						<h3 class="italiana font-extrabold text-2xl">HTML</h3>
 						<p>6 Years, <em class="text-red-500">5 Projects</em></p>
-						<div class="flex flex-row w-[25vw] mt-2">
+						<div class="flex flex-row w-[24vw] mt-2 flex-wrap">
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
@@ -197,17 +208,16 @@
 							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
 						</div>
 					</div>
-					<div class="bg-gray-500/10 w-[25vw] p-5 rounded h-min backdrop-blur-xl">
-						<h3 class="italiana font-extrabold text-2xl">Javascript, React, & NodeJS</h3>
-						<p>5 Years, <em class="text-red-500">8 Projects</em></p>
-						<div class="flex flex-row flex-wrap w-[25vw] mt-2">
+					<div class="bg-black/35 w-[25vw] p-5 rounded-lg h-min backdrop-blur-3xl">
+						<h3 class="italiana font-extrabold text-2xl">CSS</h3>
+						<p>6 Years, <em class="text-red-500">5 Projects</em></p>
+						<div class="flex flex-row w-[24vw] mt-2 flex-wrap">
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
-							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
-							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
@@ -215,19 +225,48 @@
 							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
 						</div>
 					</div>
-					<div class="bg-gray-500/10 w-[25vw] p-5 rounded h-min backdrop-blur-xl">
+					<div class="bg-black/35 w-[25vw] p-5 rounded-lg h-min backdrop-blur-3xl">
+						<h3 class="italiana font-extrabold text-2xl">Javascript</h3>
+						<p>5 Years, <em class="text-red-500">4 Projects</em></p>
+						<div class="flex flex-row flex-wrap w-[24vw] mt-2">
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
+						</div>
+					</div>
+					<div class="bg-black/35 w-[25vw] p-5 rounded-lg h-min backdrop-blur-3xl">
+						<h3 class="italiana font-extrabold text-2xl">React & NodeJS</h3>
+						<p>4 Years, <em class="text-red-500">3 Projects</em></p>
+						<div class="flex flex-row flex-wrap w-[24vw] mt-2">
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
+							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
+						</div>
+					</div>
+					<div class="bg-black/35 w-[25vw] p-5 rounded-lg h-min backdrop-blur-3xl">
 						<h3 class="italiana font-extrabold text-2xl">Java & SQLite</h3>
 						<p>2 Years, <em class="text-red-500">1 Project</em></p>
-						<div class="flex flex-row w-[25vw] mt-2">
+						<div class="flex flex-row w-[24vw] mt-2 flex-wrap">
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
 						</div>
 					</div>
-					<div class="bg-gray-500/10 w-[25vw] p-5 rounded h-min backdrop-blur-xl">
+					<div class="bg-black/35 w-[25vw] p-5 rounded-lg h-min backdrop-blur-sm">
 						<h3 class="italiana font-extrabold text-lg">Python</h3>
 						<p>1 Year, <em class="text-red-500">1 Project</em></p>
-						<div class="flex flex-row w-[25vw] mt-2">
+						<div class="flex flex-row w-[25vw] mt-2 flex-wrap">
 							<div class="w-5 h-5 bg-white/90 m-[2px] rounded-sm"></div>
 							<div class="w-5 h-5 bg-red-700 m-[2px] rounded-sm"></div>
 						</div>
@@ -235,7 +274,22 @@
 					
 				</div>
 			</div>
-			
+		</div>
+		<div class="
+			w-[100vw] 
+			h-[100vh] 
+			bg-black
+			block
+			m-auto
+			snap-center
+			relative
+			z-10
+			"
+			id="personalStatement"
+		>
+			<div class="block m-auto w-[100vw] h-[100vh] brightness-110 bg-[linear-gradient(180deg,rgba(0,0,0,1)_0%,rgba(255,255,255,0)_35%,rgba(255,255,255,0)_85%,rgba(0,0,0,1)_100%)] relative z-20">
+				<h3 class="italiana font-extrabold text-3xl w-[70vw] block m-auto relative top-[40vh]"><em>"I've realized for a while now that I don't enjoy programming itself, but rather I love solving problems and designing creative, new ways to approach them"</em><strong class="text-xl"> - Kyle Alexander Alfaro Baldovi 2024</strong> </h3>
+			</div>
 		</div>
 		
 		
